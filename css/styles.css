@@ -1,7 +1,13 @@
+:root { 
+    --accent-color: #2196F3;
+    --main-color: #212121;
+    --add-color: #757575;
+    --add-color: #2F303A;;
+    }
 .con {
     background: #212121;
 }
-.button {
+.button2 {
     color: #212121 ;
     background : #F5F4FA;
 }
@@ -27,34 +33,27 @@
     line-height: normal;
     letter-spacing: 0.28px;
 }
-.title {
-    color: #FFF;
+.hero-title {
+    color:#FFF;
 
 text-align: center;
 font-family: Roboto;
 font-size: 44px;
 font-style: normal;
 font-weight: 900;
-line-height: 60px; /* 136.364% */
+line-height: 60px;
 letter-spacing: 2.64px;
 text-transform: uppercase;
 }
-.button {
-
-    color: #FFF;
-
-    text-align: center;
-    font-family: Roboto;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px; /* 187.5% */
-    letter-spacing: 0.96px;
-    border-radius: 4px;
-    background: #2196F3;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+.hero-button {
+width: 216px;
+height: 50px;  
+font-family: Roboto;
+color: #FFFFFF;
+background-color: #2196F3;
+;
 }
-.subtitle-h2 {
+.advantages-title {
     color: #212121;
     font-family: Roboto;
     font-size: 14px;
@@ -64,7 +63,7 @@ text-transform: uppercase;
     letter-spacing: 0.42px;
     text-transform: uppercase;
 }
-.subtitle-p {
+.advantages-text {
     color: #757575;
 
 font-family: Roboto;
@@ -132,4 +131,18 @@ font-style: normal;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.42px;
+}
+.hero {
+  background-color: #212121;
+  width: 1600px;
+  height: 600px;
+}
+.porni-navi-list-item {
+color: #212121;
+font-family: Roboto;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.28px;
 }
