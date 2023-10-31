@@ -93,7 +93,7 @@ font-weight: 700;
 line-height: normal;
 letter-spacing: 1.08px;
 }
-.li-h4 {
+.planu-item-title {
 color: #212121;
 text-align: center;
 font-family: Roboto;
@@ -103,7 +103,7 @@ font-weight: 500;
 line-height: normal;
 letter-spacing: 0.48px;
 }
-.li-p {
+.planu-item-text {
 color: #757575;
 text-align: center;
 font-family: Roboto;
