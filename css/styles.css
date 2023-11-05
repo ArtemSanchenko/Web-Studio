@@ -49,35 +49,7 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-.con {
-  background: #212121;
-}
-.button2 {
-  color: #212121;
-  background: #f5f4fa;
-}
-.tsk {
-  color: #212121;
-}
-.bsk {
-  color: #757575;
-}
-.adr {
-  color: #fff;
-}
-.infoadr {
-  color: rgba(255, 255, 255, 0.6);
-}
-.ul-li-tel {
-  color: #2196f3;
 
-  font-family: Roboto;
-  font-size: 14px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: normal;
-  letter-spacing: 0.28px;
-}
 .hero-title {
   color: #fff;
 
