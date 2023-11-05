@@ -1,10 +1,13 @@
-:root { 
-    --accent-color: #2196F3;
-    --main-color: #212121;
-    --add-color: #757575;
-    --bg-color: #2F303A;
-    }
-    h1,
+:root {
+  --accent-color: #2196f3;
+  --main-color: #212121;
+  --add-color: #757575;
+  --bg-color: #2f303a;
+}
+body {
+  font-family: Roboto, sans-serif;
+}
+h1,
 h2,
 h3,
 h4,
@@ -47,144 +50,122 @@ img {
   overflow: hidden;
 }
 .con {
-    background: #212121;
+  background: #212121;
 }
 .button2 {
-    color: #212121 ;
-    background : #F5F4FA;
+  color: #212121;
+  background: #f5f4fa;
 }
 .tsk {
-    color: #212121;
+  color: #212121;
 }
 .bsk {
-    color: #757575;
+  color: #757575;
 }
 .adr {
-    color: #FFF;
+  color: #fff;
 }
 .infoadr {
-    color: rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
 }
 .ul-li-tel {
-    color: #2196F3;
+  color: #2196f3;
 
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.28px;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
 .hero-title {
-    color:#FFF;
+  color: #fff;
 
-text-align: center;
-font-family: Roboto;
-font-size: 44px;
-font-style: normal;
-font-weight: 900;
-line-height: 60px;
-letter-spacing: 2.64px;
-text-transform: uppercase;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 60px;
+  letter-spacing: 2.64px;
+  text-transform: uppercase;
 }
 .hero-button {
-width: 216px;
-height: 50px;  
-font-family: Roboto;
-color: #FFFFFF;
-background-color: #2196F3;
-;
+  width: 216px;
+  height: 50px;
+  font-family: Roboto;
+  color: #ffffff;
+  background-color: #2196f3;
 }
 .advantages-title {
-    color: #212121;
-    font-family: Roboto;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.42px;
-    text-transform: uppercase;
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
 }
 .advantages-text {
-    color: #757575;
+  color: #757575;
 
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.42px;
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
 }
 .work-title {
-    color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 1.08px;
 }
 .workers-title {
-color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 36px;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-letter-spacing: 1.08px;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 36px;
+  line-height: normal;
+  letter-spacing: 1.08px;
 }
 .workers-list-title {
-color: #212121;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: #212121;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
 .workers-list-text {
-color: #757575;
-text-align: center;
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-letter-spacing: 0.48px;
+  color: #757575;
+  text-align: center;
+  font-family: Roboto;
+  line-height: normal;
+  letter-spacing: 0.48px;
 }
-.infoadress {
-color: #FFF;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; 
-letter-spacing: 0.42px;
+.footer-address-list:first-child {
+  color: #fff;
+  font-family: Roboto;
 }
-.info {
-    color: rgba(255, 255, 255, 0.60);
-
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px;
-letter-spacing: 0.42px;
+.contact-item {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Roboto;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.42px;
 }
 .hero {
   background-color: #212121;
   width: 1600px;
   height: 600px;
 }
-.header-nav-list-item{
-color: #212121;
-font-family: Roboto;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-letter-spacing: 0.28px;
+.header-nav-list-item {
+  color: #212121;
+  font-family: Roboto;
+  font-size: 14px;
+
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.28px;
 }
