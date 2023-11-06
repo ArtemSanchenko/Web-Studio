@@ -57,8 +57,8 @@ img {
   font-family: Raleway;
   font-size: 26px;
   letter-spacing: 0.78px;}
-  .accent-logo {
-  color: var(-accent-color);
+  .logo-accent {
+  color: var(--accent-color);
   }
 .hero-title {
   color: #fff;
@@ -130,6 +130,8 @@ line-height: 1.87;
 .address {
   font-style: normal;
 }
+.footer {
+  background-color: var(--bg-color) }
 .footer-logo {
   color: white;
   font-family: Raleway;
