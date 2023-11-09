@@ -193,7 +193,7 @@ body {
  border-radius: 4px;
 background: var(--link-color);
 }
-.projects-list-item{
+.filters-list-item{
 color: var(--main-color);
 text-align: center;
 font-family: Roboto;
