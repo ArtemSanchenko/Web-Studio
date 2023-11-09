@@ -185,3 +185,39 @@ line-height: 1.87;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
+
+body {
+  font-family:Roboto, sans-serif,Raleway;
+}
+.projects-list-item-button{
+ border-radius: 4px;
+background: var(--link-color);
+}
+.projects-list-item{
+color: var(--main-color);
+text-align: center;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 26px; /* 162.5% */
+letter-spacing: 0.48px;
+}
+.projects-list-item-title {
+color: var(--main-color);
+font-family: Roboto;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 36px; /* 200% */
+letter-spacing: 1.08px;
+}
+.projects-list-item-text {
+  color: var(--add-color);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px; /* 187.5% */
+  letter-spacing: 0.48px;
+}
