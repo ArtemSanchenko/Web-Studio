@@ -89,6 +89,14 @@ img {
   font-weight: 700;
 line-height: 1.87; 
 }
+.header-nav-link:hover, .header-nav-link:focus {
+  color:var(--accent-color);}
+  .header-logo link:hover, .header-logo link:focus {
+    color:var(--accent-color);}
+    .logo-accent:hover, .logo-accent:focus {
+      color:var(--accent-color);}
+      .header-info-link:hover, .header-info-link:focus {
+        color:var(--accent-color);}
 .advantages-title {
   color: var(--main-color);
   font-family: Roboto;
@@ -185,39 +193,36 @@ line-height: 1.87;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-
+.footer-logo:hover, .footer-logo:focus {
+  color:var(--accent-color);}
+.address-link:hover, .address-link:focus {
+  color:var(--accent-color);}
+.contacts-link:hover, .contacts-link:focus {
+  color:var(--accent-color);}
 body {
-  font-family:Roboto, sans-serif,Raleway;
+  font-family:Roboto,sans-serif;
 }
+.header-nav-link:hover, .header-nav-link:focus {
+  color:var(--accent-color);}
 .projects-list-item-button{
  border-radius: 4px;
 background: var(--link-color);
 }
-.filters-list-item{
+.projects-list-item-button{
 color: var(--main-color);
-text-align: center;
 font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
 line-height: 26px; /* 162.5% */
 letter-spacing: 0.48px;
 }
 .projects-list-item-title {
 color: var(--main-color);
-font-family: Roboto;
 font-size: 18px;
-font-style: normal;
-font-weight: 700;
 line-height: 36px; /* 200% */
 letter-spacing: 1.08px;
 }
 .projects-list-item-text {
   color: var(--add-color);
   font-family: Roboto;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
 }
