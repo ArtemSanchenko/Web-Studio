@@ -52,6 +52,13 @@ img {
 }
 .hero {
   background-color: #212121;
+  padding-top: 202px;
+  padding-bottom: 202px;
+}
+.header{
+  font-weight: 1200px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 .header-logo {
   color: #000;
@@ -91,12 +98,12 @@ line-height: 1.87;
 }
 .header-nav-link:hover, .header-nav-link:focus {
   color:var(--accent-color);}
-  .header-logo link:hover, .header-logo link:focus {
-    color:var(--accent-color);}
-    .logo-accent:hover, .logo-accent:focus {
-      color:var(--accent-color);}
       .header-info-link:hover, .header-info-link:focus {
         color:var(--accent-color);}
+        .advantages {
+          padding-top: 33px;
+          padding-bottom: 126px;
+        }
 .advantages-title {
   color: var(--main-color);
   font-family: Roboto;
@@ -113,6 +120,9 @@ line-height: 1.87;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
+.work{
+  padding-bottom: 95px;
+}
 .work-title {
   color: var(--main-color);
   text-align: center;
@@ -120,6 +130,9 @@ line-height: 1.87;
   font-size: 36px;
   line-height: normal;
   letter-spacing: 1.08px;
+}
+.workers {
+  padding-bottom: 92px;
 }
 .workers-title {
   color: var(--main-color);
@@ -149,7 +162,10 @@ line-height: 1.87;
   font-style: normal;
 }
 .footer {
-  background-color: var(--bg-color) }
+  background-color: var(--bg-color);
+  padding-top: 59px;
+  padding-bottom: 59px;
+}
 .footer-logo {
   color: white;
   font-family: Raleway;
@@ -193,8 +209,6 @@ line-height: 1.87;
   line-height: 24px; /* 171.429% */
   letter-spacing: 0.42px;
 }
-.footer-logo:hover, .footer-logo:focus {
-  color:var(--accent-color);}
 .address-link:hover, .address-link:focus {
   color:var(--accent-color);}
 .contacts-link:hover, .contacts-link:focus {
