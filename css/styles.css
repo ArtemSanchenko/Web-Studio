@@ -52,13 +52,10 @@ img {
 }
 .hero {
   background-color: #212121;
-  padding-top: 202px;
-  padding-bottom: 202px;
 }
-.header{
-  font-weight: 1200px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+.header-container{
+  width: 1200px;
+  padding-bottom: 62px;
 }
 .header-logo {
   color: #000;
@@ -77,6 +74,9 @@ img {
     line-height: normal;
     letter-spacing: 0.28px;
   }
+.hero-container {
+  padding-bottom: 32px;
+}
 .hero-title {
   color: #fff;
   text-align: center;
@@ -112,6 +112,9 @@ line-height: 1.87;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
+.work-container {
+  padding-bottom: 108px;
+}
 .advantages-text {
   color: var(--add-color);
 
@@ -120,9 +123,6 @@ line-height: 1.87;
   line-height: 24px;
   letter-spacing: 0.42px;
 }
-.work{
-  padding-bottom: 95px;
-}
 .work-title {
   color: var(--main-color);
   text-align: center;
@@ -130,9 +130,6 @@ line-height: 1.87;
   font-size: 36px;
   line-height: normal;
   letter-spacing: 1.08px;
-}
-.workers {
-  padding-bottom: 92px;
 }
 .workers-title {
   color: var(--main-color);
