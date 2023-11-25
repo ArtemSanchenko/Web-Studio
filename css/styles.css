@@ -50,8 +50,29 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
 .hero {
   background-color: #212121;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.advantages{
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
+.work{
+  padding-bottom: 94px;
+}
+.workers{
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .header-logo {
   color: #000;
@@ -93,10 +114,6 @@ line-height: 1.87;
   color:var(--accent-color);}
       .header-info-link:hover, .header-info-link:focus {
         color:var(--accent-color);}
-        .advantages {
-          padding-top: 33px;
-          padding-bottom: 126px;
-        }
 .advantages-title {
   color: var(--main-color);
   font-family: Roboto;
@@ -217,6 +234,16 @@ font-family: Roboto;
 line-height: 26px; /* 162.5% */
 letter-spacing: 0.48px;
 }
+.header{
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.container{
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto ;
+}
 .projects-list-item-title {
 color: var(--main-color);
 font-size: 18px;
@@ -228,4 +255,12 @@ letter-spacing: 1.08px;
   font-family: Roboto;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+}
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.projects{
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
