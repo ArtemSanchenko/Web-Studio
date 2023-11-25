@@ -175,9 +175,7 @@ img {
 .address {
   font-style: normal;
 }
-.footer {
-  background-color: var(--bg-color);
-}
+
 .footer-logo {
   color: white;
   font-family: Raleway;
@@ -229,21 +227,14 @@ img {
 body {
   font-family: Roboto, sans-serif;
 }
-.header-nav-link:hover,
-.header-nav-link:focus {
-  color: var(--accent-color);
-}
 .projects-list-item-button {
   border-radius: 4px;
   background: var(--link-color);
+    font-family: Roboto;
+    line-height: 26px; /* 162.5% */
+    letter-spacing: 0.48px;
+    font-weight: 500;
 }
-.projects-list-item-button {
-  color: var(--main-color);
-  font-family: Roboto;
-  line-height: 26px; /* 162.5% */
-  letter-spacing: 0.48px;
-}
-
 .projects-list-item-title {
   color: var(--main-color);
   font-size: 18px;
