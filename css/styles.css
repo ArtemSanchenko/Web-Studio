@@ -53,10 +53,6 @@ img {
 .hero {
   background-color: #212121;
 }
-.header-container{
-  width: 1200px;
-  padding-bottom: 62px;
-}
 .header-logo {
   color: #000;
   font-family: Raleway;
@@ -74,9 +70,6 @@ img {
     line-height: normal;
     letter-spacing: 0.28px;
   }
-.hero-container {
-  padding-bottom: 32px;
-}
 .hero-title {
   color: #fff;
   text-align: center;
@@ -112,8 +105,10 @@ line-height: 1.87;
   letter-spacing: 0.42px;
   text-transform: uppercase;
 }
-.work-container {
-  padding-bottom: 108px;
+.container {
+  width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto ;
 }
 .advantages-text {
   color: var(--add-color);
@@ -160,8 +155,6 @@ line-height: 1.87;
 }
 .footer {
   background-color: var(--bg-color);
-  padding-top: 59px;
-  padding-bottom: 59px;
 }
 .footer-logo {
   color: white;
@@ -185,7 +178,6 @@ line-height: 1.87;
 .header-nav-link {
   color: var(--main-color);
   font-size: 14px;
-  font-weight: 500;
   letter-spacing: 0.28px;
 }
 .address-link{
