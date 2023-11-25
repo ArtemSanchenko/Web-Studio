@@ -61,7 +61,7 @@ img {
 }
 .advantages{
   padding-top: 94px;
-  padding-bottom: 118px;
+  padding-bottom: 94px;
 }
 .work{
   padding-bottom: 94px;
@@ -237,12 +237,6 @@ letter-spacing: 0.48px;
 .header{
   padding-top: 24px;
   padding-bottom: 25px;
-}
-
-.container{
-  width: 1200px;
-  padding: 0 15px;
-  margin: 0 auto ;
 }
 .projects-list-item-title {
 color: var(--main-color);
