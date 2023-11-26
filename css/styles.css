@@ -126,7 +126,12 @@ img {
   line-height: normal;
   letter-spacing: 0.42px;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
+.footer-address-list {
+  margin-top: 20px;
+}
+
 .container {
   width: 1200px;
   padding: 0 15px;
@@ -153,12 +158,10 @@ header > .container {
   flex-direction: row;
 }
 .header-logo {
-  display: flex;
  margin-right: 93px;
 }
 .header-nav-list {
   display: flex;
-  margin-right: 50px;
   gap: 50px;
 }
 .hero > .container {
@@ -168,8 +171,9 @@ header > .container {
 .header-info-list{
   display: flex;
   gap: 50px;
-  margin-left: 294px;
+  margin-left: auto
 }
+
 .hero-button {
 display: block;
 margin: 0 auto;
@@ -242,7 +246,9 @@ margin-top: 30px;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.42px;
+  margin-top: 9px;
 }
+
 .header-nav-link {
   color: var(--main-color);
   font-size: 14px;
@@ -284,6 +290,7 @@ body {
     line-height: 26px; /* 162.5% */
     letter-spacing: 0.48px;
     font-weight: 500;
+    margin-bottom: 50px;
 }
 .projects-list-item-title {
   color: var(--main-color);
