@@ -148,6 +148,32 @@ img {
   line-height: normal;
   letter-spacing: 1.08px;
 }
+header > .container {
+  display: flex;
+  flex-direction: row;
+}
+.header-logo {
+  display: flex;
+ margin-right: 93px;
+}
+.header-nav-list {
+  display: flex;
+  margin-right: 50px;
+  gap: 50px;
+}
+.hero > .container {
+ display: flex;
+ flex-direction: column;
+}
+.header-info-list{
+  display: flex;
+  gap: 50px;
+  margin-left: 294px;
+}
+.hero-button {
+display: flex;
+justify-content: center;
+}
 .workers-title {
   color: var(--main-color);
   text-align: center;
