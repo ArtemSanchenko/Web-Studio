@@ -171,8 +171,32 @@ header > .container {
   margin-left: 294px;
 }
 .hero-button {
-display: flex;
-justify-content: center;
+display: block;
+margin: 0 auto;
+margin-top: 30px;
+}
+.filters-list {
+  display: flex;
+ justify-content: center;
+ gap: 8px;
+}
+.advantages > .container {
+  display: flex;
+  flex-direction: row;
+}
+.advantages-list {
+  display: flex;
+  gap: 30px;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+}
+.workers-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
 }
 .workers-title {
   color: var(--main-color);
@@ -272,6 +296,12 @@ body {
   font-family: Roboto;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+}
+.projects-list {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+ gap: 30px;
 }
 .footer {
   padding-top: 60px;
