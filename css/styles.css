@@ -84,6 +84,12 @@ img {
 .logo-accent {
   color: var(--accent-color);
 }
+.advantages-item{
+  flex-basis:calc((100% - 90px)/4);
+}
+.projects-list-item {
+  flex-basis:calc((100% - 360px)/12);
+}
 .header-info-link {
   color: var(--add-color);
   font-family: Roboto;
