@@ -88,7 +88,7 @@ img {
   flex-basis:calc((100% - 90px)/4);
 }
 .projects-list-item {
-  flex-basis:calc((100% - 360px)/12);
+  flex-basis:calc((100% - 60px)/3);
 }
 .header-info-link {
   color: var(--add-color);
