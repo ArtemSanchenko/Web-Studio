@@ -90,6 +90,30 @@ img {
 .projects-list-item {
   flex-basis:calc((100% - 60px)/3);
 }
+.advantages-item::before {
+  content: '';
+  display: block;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+ background-image: url(../images/antenna_img.svg);
+ background-repeat: no-repeat;
+ background-position: center;
+ background-size: 70px 70px;
+ margin-bottom: 30px;
+ background-color: #f5f5f5;
+ width: 270px;
+ height: 120px;
+}
+.advantages-item:nth-child(3)::before {
+  background-image: url(../images/computer_img.svg);
+}
+.advantages-item:nth-child(2)::before {
+  background-image: url(../images/clock_img.svg);
+}
+.advantages-item:nth-child(4)::before {
+  background-image: url(../images/austronaut_img.svg);
+}
 .header-info-link {
   color: var(--add-color);
   font-family: Roboto;
