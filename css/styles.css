@@ -93,8 +93,6 @@ img {
 .advantages-item::before {
   content: '';
   display: block;
-  width: 70px;
-  height: 70px;
   margin: 0 auto;
  background-image: url(../images/antenna_img.svg);
  background-repeat: no-repeat;
@@ -104,6 +102,7 @@ img {
  background-color: #f5f5f5;
  width: 270px;
  height: 120px;
+ border-radius: 4px;
 }
 .advantages-item:nth-child(3)::before {
   background-image: url(../images/computer_img.svg);
@@ -133,6 +132,26 @@ img {
   letter-spacing: 2.64px;
   text-transform: uppercase;
   margin: 0 auto;
+}
+.hero-button:hover 
+ {
+    color: var(--accent-color);
+    background-color: var(--link-color);
+    cursor: pointer;
+    border: none;
+    padding: 8px;
+}
+.projects-list-item-button:hover, 
+.projects-list-item-button:focus {
+ background-color: var(--accent-color);
+ color: var(--link-color);
+ cursor: pointer;
+}
+.information_worker {
+  padding: 30px 0;
+}
+.container_sites {
+  padding: 20px 0;
 }
 .hero-button {
   width: 216px;
@@ -315,6 +334,7 @@ body {
   font-family: Roboto, sans-serif;
 }
 .projects-list-item-button {
+  min-width: 73px;
   border-radius: 4px;
   background: var(--link-color);
     font-family: Roboto;
