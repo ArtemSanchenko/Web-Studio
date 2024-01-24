@@ -237,11 +237,16 @@ header > .container {
 .hero > .container {
  display: flex;
  flex-direction: column;
- max-width: 1600px;
+ min-width: 1600px;
  height: 600px;
  margin-left: auto;
  margin-right: auto;
- background-image: rgba(47, 48, 58, 0.40) ,url(../images/background_img.png);
+ background-image: linear-gradient(
+  to right,
+  rgba(47, 48, 58, 0.40),
+  rgba(47, 48, 58, 0.40)
+),
+url("../images/background_img.png");
  background-repeat: no-repeat;
  background-position: center;
  background-size: cover;
