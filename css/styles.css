@@ -170,7 +170,7 @@ img {
   border: none;
 }
 .workers-list-item {
-  border-radius: 0px, 0px, 4px, 4px;
+  border-radius: 0px 0px 4px 4px;
 }
 .project-link {
   display: block;
@@ -184,12 +184,6 @@ img {
   border-width: 1px;
   border-color: #eee;
   border-style: solid;
-}
-.projects-list-item-button  {
-  padding-top: 6px;
-  padding-bottom: 6px;
-  padding-right: 22px;
-  padding-left: 22px;
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
@@ -254,6 +248,7 @@ header > .container {
 display: block;
 margin: 0 auto;
 margin-top: 30px;
+border-radius: 4px;
 }
 .filters-list {
   display: flex;
@@ -261,6 +256,7 @@ margin-top: 30px;
  gap: 8px;
  margin-bottom: 50px;
 }
+
 .advantages > .container {
   display: flex;
   flex-direction: row;
@@ -289,7 +285,6 @@ margin-top: 30px;
 }
 .workers-list-item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
 }
 .workers-list-title {
   color: var(--main-color);
@@ -376,6 +371,10 @@ body {
     letter-spacing: 0.48px;
     font-weight: 500;
     border: none;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-right: 22px;
+    padding-left: 22px;
 }
 
 .projects-list-item-title {
