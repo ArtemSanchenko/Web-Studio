@@ -290,6 +290,25 @@ border-radius: 4px;
   line-height: normal;
   letter-spacing: 1.08px;
 }
+.workers-list-container-svg {
+  fill: var(--add-color);
+}
+.workers-list-container-svg:hover,
+.workers-list-container-svg:focus {
+  fill: var(--link-color);
+  background-color: var(--accent-color);
+border-radius: 30px;
+border-width: 100px;
+}
+.workers-list-container {
+  display: flex;
+  gap: 33px;
+  padding-top: 28px;
+  justify-content: center;
+}
+.header-info-item-svg {
+  margin-right: 10px;
+}
 .workers-list-item {
   box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
