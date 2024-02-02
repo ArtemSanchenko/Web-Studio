@@ -133,6 +133,7 @@ img {
   line-height: normal;
   letter-spacing: 0.28px;
 }
+
 .hero-title {
   color: #fff;
   text-align: center;
@@ -198,10 +199,6 @@ img {
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
-  color: var(--accent-color);
-}
-.header-info-link:hover,
-.header-info-link:focus {
   color: var(--accent-color);
 }
 .advantages-title {
@@ -293,14 +290,35 @@ border-radius: 4px;
 .workers-list-container-svg {
   fill: var(--add-color);
 }
+.clients-list {
+  display: flex;
+  gap: 30px;
+  padding-top: 50px;
+  justify-content: center;
+}
+.clients-list-item-svg {
+  padding-top: 6px;
+  fill: var(--add-color);
+  border-color: #AFB1B8;
+  border-style: inset;
+  border-width: 1px;
+}
 .workers-list-container-svg:hover,
 .workers-list-container-svg:focus {
   fill: var(--link-color);
-  background-color: var(--accent-color);
-border-radius: 30px;
-border-width: 100px;
 }
-.workers-list-container {
+.clients-title {
+font-size: 36px;
+text-align: center;
+}
+.information-worker-list-link:hover,
+.information-worker-list-link:focus {
+  padding: 12px;
+  display: block;
+ border-radius: 50px;
+ background-color: var(--accent-color);
+}
+.information-worker-list {
   display: flex;
   gap: 33px;
   padding-top: 28px;
