@@ -62,11 +62,11 @@ img {
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
-   to right,
-   rgba(47, 48, 58, 0.40),
-   rgba(47, 48, 58, 0.40)
- ),
- url("../images/background.jpg");
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -95,25 +95,25 @@ img {
 .logo-accent {
   color: var(--accent-color);
 }
-.advantages-item{
-  flex-basis:calc((100% - 90px)/4);
+.advantages-item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 .projects-list-item {
-  flex-basis:calc((100% - 60px)/3);
+  flex-basis: calc((100% - 60px) / 3);
 }
 .advantages-item::before {
-  content: '';
+  content: "";
   display: block;
   margin: 0 auto;
- background-image: url(../images/antenna_img.svg);
- background-repeat: no-repeat;
- background-position: center;
- background-size: 70px 70px;
- margin-bottom: 30px;
- background-color: #f5f5f5;
- width: 270px;
- height: 120px;
- border-radius: 4px;
+  background-image: url(../images/antenna_img.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 70px 70px;
+  margin-bottom: 30px;
+  background-color: #f5f5f5;
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
 }
 .advantages-item:nth-child(3)::before {
   background-image: url(../images/computer_img.svg);
@@ -146,19 +146,19 @@ img {
   margin: 0 auto;
 }
 .hero-button:hover,
-.hero-button:focus
- {
-    color: var(--accent-color);
-    background-color: var(--link-color);
-    cursor: pointer;
-    border: none;
+.hero-button:focus {
+  color: var(--accent-color);
+  background-color: var(--link-color);
+  cursor: pointer;
+  border: none;
 }
-.projects-list-item-button:hover, 
+.projects-list-item-button:hover,
 .projects-list-item-button:focus {
- background-color: var(--accent-color);
- color: var(--link-color);
- cursor: pointer;
- box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+  background-color: var(--accent-color);
+  color: var(--link-color);
+  cursor: pointer;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 .workers-list-title {
   margin-bottom: 10px;
@@ -189,9 +189,11 @@ img {
 }
 .project-link:hover,
 .project-link:focus {
-  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+    0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
+
 .projects-list-item {
   border-width: 1px;
   border-color: #eee;
@@ -236,29 +238,29 @@ header > .container {
   align-items: baseline;
 }
 .header-logo {
- margin-right: 93px;
+  margin-right: 93px;
 }
 .header-nav-list {
   display: flex;
   gap: 50px;
 }
-.header-info-list{
+.header-info-list {
   display: flex;
   gap: 50px;
-  margin-left: auto
+  margin-left: auto;
 }
 
 .hero-button {
-display: block;
-margin: 0 auto;
-margin-top: 30px;
-border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 4px;
 }
 .filters-list {
   display: flex;
- justify-content: center;
- gap: 8px;
- margin-bottom: 50px;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 50px;
 }
 
 .advantages > .container {
@@ -298,37 +300,54 @@ border-radius: 4px;
 }
 .clients-list-item-svg {
   padding-top: 6px;
-  fill: var(--add-color);
-  border-color: #AFB1B8;
-  border-style: inset;
-  border-width: 1px;
+  fill: #afb1b8;
 }
-.workers-list-container-svg:hover,
-.workers-list-container-svg:focus {
+.information-worker-list-link:hover .workers-list-container-svg {
   fill: var(--link-color);
 }
+.information-worker-list-link:focus .workers-list-container-svg {
+  fill: var(--link-color);
+}
+.clients-list-item-link {
+  display: block;
+  border-radius: 4px;
+  border-color: #afb1b8;
+  border-width: 1px;
+  border-style: inset;
+  padding: 16px 32px 16px 32px;
+}
+.information-worker-list-link {
+  padding: 12px;
+  display: flex;
+  border-radius: 50%;
+}
+.clients {
+  margin-top: 74px;
+  margin-bottom: 94px;
+}
 .clients-title {
-font-size: 36px;
-text-align: center;
+  font-size: 36px;
+  text-align: center;
+}
+.workers-list-item {
+  background-color: var(--link-color);
 }
 .information-worker-list-link:hover,
 .information-worker-list-link:focus {
-  padding: 12px;
-  display: block;
- border-radius: 50px;
- background-color: var(--accent-color);
+  background-color: var(--accent-color);
 }
 .information-worker-list {
   display: flex;
   gap: 33px;
-  padding-top: 28px;
+  margin-top: 28px;
   justify-content: center;
 }
 .header-info-item-svg {
   margin-right: 10px;
 }
 .workers-list-item {
-  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+    0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 .workers-list-title {
   color: var(--main-color);
@@ -338,6 +357,9 @@ text-align: center;
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.48px;
+}
+.workers {
+  background-color: #f5f4fa;
 }
 .workers-list-text {
   color: var(--add-color);
@@ -409,16 +431,16 @@ body {
 .projects-list-item-button {
   min-width: 73px;
   border-radius: 4px;
-  background: #F5F4FA;
-    font-family: Roboto;
-    line-height: 26px; /* 162.5% */
-    letter-spacing: 0.48px;
-    font-weight: 500;
-    border: none;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-right: 22px;
-    padding-left: 22px;
+  background: #f5f4fa;
+  font-family: Roboto;
+  line-height: 26px; /* 162.5% */
+  letter-spacing: 0.48px;
+  font-weight: 500;
+  border: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-right: 22px;
+  padding-left: 22px;
 }
 
 .projects-list-item-title {
@@ -427,7 +449,13 @@ body {
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
 }
-
+.footer {
+  display: flex;
+}
+.info {
+  padding-top: 72px;
+  gap: 20px ;
+}
 .projects-list-item-text {
   color: var(--add-color);
   font-family: Roboto;
@@ -438,7 +466,7 @@ body {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
- gap: 30px;
+  gap: 30px;
 }
 .footer {
   padding-top: 60px;
