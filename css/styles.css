@@ -295,19 +295,32 @@ header > .container {
 .clients-list {
   display: flex;
   gap: 30px;
-  padding-top: 50px;
+  margin-top: 50px;
   justify-content: center;
 }
 .clients-list-item-svg {
-  padding-top: 6px;
   fill: #afb1b8;
 }
-.information-worker-list-link:hover .workers-list-container-svg {
-  fill: var(--link-color);
-}
+.information-worker-list-link:hover .workers-list-container-svg,
 .information-worker-list-link:focus .workers-list-container-svg {
   fill: var(--link-color);
 }
+.clients-list-item-link:hover .clients-list-item-svg,
+.clients-list-item-link:focus .clients-list-item-svg {
+  fill: var(--accent-color);
+}
+.header-info-link:hover .header-info-item-svg,
+.header-info-link:focus .header-info-item-svg{
+  fill: var(--accent-color);
+} 
+.header-info-link:hover,
+.header-info-link:focus {
+ color: var(--accent-color);
+} 
+.clients-list-item-link:hover,
+.clients-list-item-link:focus {
+  border-color: var(--accent-color);
+} 
 .clients-list-item-link {
   display: block;
   border-radius: 4px;
@@ -321,9 +334,22 @@ header > .container {
   display: flex;
   border-radius: 50%;
 }
+.info-link {
+  padding: 12px;
+  border-radius: 50%;
+  display: flex;
+}
+.info-link:focus .info-link-svg,
+.info-link:hover .info-link-svg  {
+  fill: var(--link-color);
+} 
+.info-link:focus, 
+.info-link:hover  {
+  background-color: var(--accent-color);
+} 
 .clients {
-  margin-top: 74px;
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .clients-title {
   font-size: 36px;
@@ -338,7 +364,7 @@ header > .container {
 }
 .information-worker-list {
   display: flex;
-  gap: 33px;
+  gap: 10px;
   margin-top: 28px;
   justify-content: center;
 }
@@ -449,9 +475,7 @@ body {
   line-height: 36px; /* 200% */
   letter-spacing: 1.08px;
 }
-.footer {
-  display: flex;
-}
+
 .info {
   padding-top: 72px;
   gap: 20px ;
