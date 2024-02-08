@@ -309,6 +309,7 @@ header > .container {
 .clients-list-item-link:focus .clients-list-item-svg {
   fill: var(--accent-color);
 }
+
 .header-info-link:hover .header-info-item-svg,
 .header-info-link:focus .header-info-item-svg{
   fill: var(--accent-color);
@@ -326,7 +327,7 @@ header > .container {
   border-radius: 4px;
   border-color: #afb1b8;
   border-width: 1px;
-  border-style: inset;
+  border-style: solid;
   padding: 16px 32px 16px 32px;
 }
 .information-worker-list-link {
@@ -334,19 +335,35 @@ header > .container {
   display: flex;
   border-radius: 50%;
 }
-.info-link {
+.footer-social-list-link{
   padding: 12px;
   border-radius: 50%;
   display: flex;
 }
-.info-link:focus .info-link-svg,
-.info-link:hover .info-link-svg  {
+.footer-social-list-link:focus .footer-social-list-link-svg,
+.footer-social-list-link:hover .footer-social-list-link-svg  {
   fill: var(--link-color);
 } 
-.info-link:focus, 
-.info-link:hover  {
+.footer-social-list {
+  display: flex;
+}
+.footer-social-list-link:focus, 
+.footer-social-list-link:hover  {
   background-color: var(--accent-color);
 } 
+.header-info-item-svg {
+  fill: var(--add-color);
+}
+.footer-social-list-link {
+  background-color: #ffffff10;
+}
+.footer-social-list-link-svg {
+  fill: var(--link-color);
+}
+.header-info-link {
+  display: flex;
+  align-items: center;
+}
 .clients {
   padding-top: 94px;
   padding-bottom: 94px;
