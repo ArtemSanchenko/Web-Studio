@@ -351,6 +351,25 @@ header > .container {
 .footer-social-list-link:hover  {
   background-color: var(--accent-color);
 } 
+.social_list {
+display: flex;
+}
+.footer .container {
+  display: flex;
+  gap: 70px;
+}
+.socialmedia_list {
+  display: flex;
+  
+}
+.footer-social-list-title {
+  margin-bottom: 20px;
+  width: 14px;
+  color: var(--link-color);
+}
+.footer-social-list {
+  gap: 10px;
+}
 .header-info-item-svg {
   fill: var(--add-color);
 }
