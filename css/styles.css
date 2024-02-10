@@ -351,9 +351,6 @@ header > .container {
 .footer-social-list-link:hover  {
   background-color: var(--accent-color);
 } 
-.social_list {
-display: flex;
-}
 .footer .container {
   display: flex;
   gap: 70px;
