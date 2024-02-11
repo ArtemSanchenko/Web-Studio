@@ -357,11 +357,22 @@ header > .container {
 }
 .socialmedia_list {
   display: flex;
-  
+}
+.work-list-item-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #2f303acb;
+  height: 70px;
+  width: 370px;
+  position: absolute;
+bottom: 0;
 }
 .footer-social-list-title {
+  text-transform: uppercase;
   margin-bottom: 20px;
-  width: 14px;
   color: var(--link-color);
 }
 .footer-social-list {
@@ -518,6 +529,9 @@ body {
   font-family: Roboto;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.48px;
+}
+.work-list-item {
+  position: relative;
 }
 .projects-list {
   display: flex;
