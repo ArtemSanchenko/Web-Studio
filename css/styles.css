@@ -359,11 +359,17 @@ header > .container {
   display: flex;
 }
 .work-list-item-text {
+  font-family: var(--font-family);
+font-weight: 700;
+font-size: 14px;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+text-align: center;
+color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   text-transform: uppercase;
-  color: #FFFFFF;
   background-color: #2f303acb;
   height: 70px;
   width: 370px;
