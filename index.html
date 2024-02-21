@@ -322,21 +322,21 @@
 		</main>
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-			  <button type="”button”" class="btn" data-modal-close> <div width="30px" height="30px"><use href="./images/buttonclose.svg"></use></div></button>
-			  <p>
+			  <button type="”button”" class="btn" data-modal-close> <svg width="18px" height="18px"><use href="./images/symboldefts.svg#buttonclose"></use></svg></button>
+			  <p class="modal-text">
 				Залиште свої дані, ми вам передзвонимо
 			  </p>
 			  <form action="">
-				<p>Ім'я</p>
-				<input required type="text">
-				<p>Телефон</p>
-				<input required type="tel">
-				<p>Пошта</p>
-				<input required type="email">
-				<p>Коментар</p>
-				<input type="text">
-				<input required type="checkbox" />Погоджуюся з розсилкою та приймаю <a href="https://customerservice.aliexpress.com/category?language=en&from=byr_common&hcMapRule=aeMapRule">Умови договору</a>  
-				<button type="submit">Відправити</button>
+				<p class="modal-form-text">Ім'я</p>
+				<input class="modal-form-name" required type="text">
+				<p class="modal-form-text">Телефон</p>
+				<input class="modal-form-tel" required type="tel">
+				<p class="modal-form-text">Пошта</p>
+				<input class="modal-form-email" required type="email">
+				<p class="modal-form-text">Коментар</p>
+				<input class="modal-form-comment" type="text">
+				<label class="modal-form-container" for=""><input class="modal-form-input" required type="checkbox" /> Погоджуюся з розсилкою та приймаю  <a class="modal-form-link link" href="https://customerservice.aliexpress.com/category?language=en&from=byr_common&hcMapRule=aeMapRule">Умови договору</a></label>  
+				<button class="modal-form-button" type="submit">Відправити</button>
 			  </form>
 			</div>
 		  </div>
