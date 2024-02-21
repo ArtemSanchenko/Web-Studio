@@ -580,9 +580,10 @@ body {
   left: 50%;
  width: 528px;
  height: 581px;
-  padding: 15px;
+  padding: 42px;
   background-color: var(--link-color);
   transform: translate(-50%, -50%);
+  border-radius: 4px;
  }
  .modal-form-input {
   width: 448px;
@@ -608,7 +609,11 @@ height: 16px;
 fill: #212121;
  }
  .modal-form-button {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
   border-radius: 4px;
+  margin-top: 30px;
 width: 200px;
 height: 50px;
 box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -618,7 +623,6 @@ font-weight: 700;
 font-size: 16px;
 line-height: 187%;
 letter-spacing: 0.06em;
-text-align: center;
 color: var(--link-color);
 border: #2196f3;
  }
@@ -632,7 +636,6 @@ letter-spacing: 0.01em;
 color: #757575;
  }
  .modal-text {
-  margin-top: 36px;
   margin-bottom: 12px;
   font-family: var(--font-family);
 font-weight: 700;
@@ -658,20 +661,20 @@ top: 0;
  .modal-form-name {
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-width: 448px;
-height: 40px;
+width: 100%;
+padding: 11px;
  }
  .modal-form-tel{
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-width: 448px;
-height: 40px;
+width: 100%;
+padding: 11px;
  }
  .modal-form-email{
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
-width: 448px;
-height: 40px;
+width: 100%;
+padding: 11px;
  }
  .modal-form-comment{
   border: 1px solid rgba(33, 33, 33, 0.2);
