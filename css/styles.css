@@ -580,7 +580,7 @@ body {
   left: 50%;
  width: 528px;
  height: 581px;
-  padding: 42px;
+  padding: 40px;
   background-color: var(--link-color);
   transform: translate(-50%, -50%);
   border-radius: 4px;
@@ -595,6 +595,8 @@ text-decoration-skip-ink: none;
 color: var(--accent-color);
  }
  .modal-form-container {
+  display: flex;
+  justify-content: center;
   font-family: var(--font-family);
 font-weight: 400;
 font-size: 14px;
@@ -612,6 +614,7 @@ fill: #212121;
  .modal-form-button:focus {
   color: #2196f3;
   background-color: var(--link-color);
+  cursor: pointer;
  }
  .modal-form-button {
   display: block;
@@ -652,20 +655,19 @@ color: #212121;
  .btn:hover,
  .btn:focus {
   fill: var(--accent-color);
+  cursor: pointer;
  }
  .btn {
-  margin-top: 10px;
-  margin-right: 12px;
   position: absolute;
   display: flex;
 background-color:transparent;
 border-style: solid;
 border-color: rgba(0, 0, 0, 0.1);
 border-width: 2px;
-padding: 10px;
+padding: 6px;
 border-radius: 50%;
-right: 0;
-top: 0;
+right: 12px;
+top: 10px;
  }
  .modal-form-name {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -674,7 +676,6 @@ width: 100%;
 padding: 11px;
 margin-top: 4px;
 padding-left: 40px;
-margin-bottom: 10px;
  }
  .modal-form-tel{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -683,15 +684,14 @@ width: 100%;
 padding: 11px;
 margin-top: 4px;
 padding-left: 40px;
-margin-bottom: 10px;
  }
  .footer-svg {
   position: absolute;
   margin-left: 10px;
  }
  .footer-E_mail-list-item-button {
-  width: 200px;
-height: 50px;
+  border-radius: 4px;
+ padding: 10px 62px 10px 28px;
 font-family: var(--font-family);
 font-weight: 700;
 font-size: 16px;
@@ -701,6 +701,18 @@ text-align: center;
 color: var(--link-color);
 background-color: #2196f3;
 border-color: #2196f3;
+ }
+ .footer-E_mail-list-item-button:hover,
+ .footer-E_mail-list-item-button:focus {
+  cursor: pointer;
+  background-color: var(--link-color);
+  color: var(--accent-color);
+ }
+ .footer-E_mail-list-item-input:hover,
+ .footer-E_mail-list-item-input:focus {
+  cursor: pointer;
+  border-color: var(--accent-color);
+  color: var(--link-color);
  }
  .footer-E_mail-list-item-input {
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -728,7 +740,6 @@ width: 100%;
 padding: 11px;
 margin-top: 4px;
 padding-left: 40px;
-margin-bottom: 10px;
  }
  .modal-form-comment{
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -743,11 +754,17 @@ color: rgba(117, 117, 117, 0.5);
 padding-top: 12px;
 padding-left: 16px;
 margin-top: 4px;
-margin-bottom: 20px;
+resize:none ;
  }
  .modal-form-name-svg {
   position: absolute;
-  left: 0;
-  margin-left: 55px;
-  margin-top: 15px;
+  bottom: -124px;
+  left:12px; 
  }
+ .modal-form-text {
+  display:block;
+position:relative;
+margin-bottom: 10px;
+ }
+ .modal-form-text:last-of-type {
+  margin-bottom: 20px;}
