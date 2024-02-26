@@ -604,6 +604,8 @@ line-height: 171%;
 letter-spacing: 0.03em;
 color: #757575;
 margin-top: 20px;
+gap: 8.28px ;
+align-items: center;
  }
  .modal-form-input {
 width: 16px;
@@ -635,7 +637,9 @@ color: var(--link-color);
 border: #2196f3;
  }
  .modal-form-text {
-  margin-top: 10px;
+  display:block;
+  position:relative;
+  margin-bottom: 10px;
   margin-bottom: 4px;
   font-family: var(--font-family);
 font-weight: 400;
@@ -668,22 +672,6 @@ padding: 6px;
 border-radius: 50%;
 right: 12px;
 top: 10px;
- }
- .modal-form-name {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-width: 100%;
-padding: 11px;
-margin-top: 4px;
-padding-left: 40px;
- }
- .modal-form-tel{
-  border: 1px solid rgba(33, 33, 33, 0.2);
-border-radius: 4px;
-width: 100%;
-padding: 11px;
-margin-top: 4px;
-padding-left: 40px;
  }
  .footer-svg {
   position: absolute;
@@ -733,7 +721,7 @@ margin-right: 12px;
   color: var(--link-color);
   margin-bottom: 20px;
  }
- .modal-form-email{
+ .modal-input{
   border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 width: 100%;
@@ -758,13 +746,8 @@ resize:none ;
  }
  .modal-form-name-svg {
   position: absolute;
-  bottom: -124px;
-  left:12px; 
- }
- .modal-form-text {
-  display:block;
-position:relative;
-margin-bottom: 10px;
+  bottom: 11px;
+  left: 12px;
  }
  .modal-form-text:last-of-type {
   margin-bottom: 20px;}
