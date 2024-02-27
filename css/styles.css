@@ -178,7 +178,6 @@ img {
 	line-height: 1.87;
 	border: none;
 }
-
 .workers-list-item {
 	border-radius: 0px 0px 4px 4px;
 }
@@ -282,13 +281,11 @@ header > .container {
 	display: flex;
 	gap: 50px;
 }
-
 .header-info-list {
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
 }
-
 .hero-button {
 	display: block;
 	margin: 0 auto;
