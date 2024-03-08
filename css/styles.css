@@ -67,13 +67,13 @@ img {
 border-color: var(--accent-color);
 outline: none;
 }
-.modal-form-name-svg {
-	fill: #212121;
-}
 .modal-form-comment:hover,
 .modal-form-comment:focus {
 border-color: var(--accent-color);
 outline: none;
+}
+.modal-form-name-svg {
+	fill: #212121;
 }
 .hero {
 	padding-top: 200px;
