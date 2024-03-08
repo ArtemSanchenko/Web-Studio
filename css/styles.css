@@ -67,6 +67,12 @@ img {
 border-color: var(--accent-color);
 outline: none;
 }
+.modal-input {
+	outline: none;
+}
+.modal-form-input {
+	outline: none;
+}
 .modal-form-comment:hover,
 .modal-form-comment:focus {
 border-color: var(--accent-color);
