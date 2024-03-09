@@ -56,16 +56,22 @@ img {
 .modal-input:hover,
 .modal-input:focus {
 	border-color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal-input:hover + .modal-form-name-svg,
 .modal-input:focus + .modal-form-name-svg {
 	fill: var(--accent-color);
 	outline: none;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal-form-input:hover,
-.modal-form-input:focus{
-border-color: var(--accent-color);
-outline: none;
+.modal-form-input:focus {
+	border-color: var(--accent-color);
+	outline: none;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal-input {
 	outline: none;
@@ -75,8 +81,10 @@ outline: none;
 }
 .modal-form-comment:hover,
 .modal-form-comment:focus {
-border-color: var(--accent-color);
-outline: none;
+	border-color: var(--accent-color);
+	outline: none;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal-form-name-svg {
 	fill: #212121;
@@ -174,6 +182,8 @@ outline: none;
 	background-color: var(--link-color);
 	cursor: pointer;
 	border: none;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .projects-list-item-button:hover,
 .projects-list-item-button:focus {
@@ -182,6 +192,8 @@ outline: none;
 	cursor: pointer;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .workers-list-title {
 	margin-bottom: 10px;
@@ -192,6 +204,7 @@ outline: none;
 .container_sites {
 	padding: 20px 24px;
 }
+
 .hero-button {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -215,6 +228,8 @@ outline: none;
 	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 	cursor: pointer;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 
 .projects-list-item {
@@ -228,6 +243,8 @@ outline: none;
 }
 .box:hover .project-link-container {
 	transform: translateX(0);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .project-link-container {
 	position: absolute;
@@ -260,6 +277,11 @@ outline: none;
 	background-color: var(--accent-color);
 	position: absolute;
 	bottom: 0;
+}
+.current:hover,
+.current:focus {
+	transform: scale(-0.5, 1);
+	transition-duration: 1000ms;
 }
 .current {
 	color: var(--accent-color);
@@ -365,23 +387,33 @@ header > .container {
 .information-worker-list-link:hover .workers-list-container-svg,
 .information-worker-list-link:focus .workers-list-container-svg {
 	fill: var(--link-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .clients-list-item-link:hover .clients-list-item-svg,
 .clients-list-item-link:focus .clients-list-item-svg {
 	fill: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 
 .header-info-link:hover .header-info-item-svg,
 .header-info-link:focus .header-info-item-svg {
 	fill: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .header-info-link:hover,
 .header-info-link:focus {
 	color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
 	border-color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .clients-list-item-link {
 	display: block;
@@ -404,13 +436,19 @@ header > .container {
 .footer-social-list-link:focus .footer-social-list-link-svg,
 .footer-social-list-link:hover .footer-social-list-link-svg {
 	fill: var(--link-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .footer-social-list {
 	display: flex;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .footer-social-list-link:focus,
 .footer-social-list-link:hover {
 	background-color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .footer .container {
 	display: flex;
@@ -472,6 +510,14 @@ header > .container {
 .information-worker-list-link:hover,
 .information-worker-list-link:focus {
 	background-color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+}
+.header-nav-link:hover,
+.header-nav-link:focus {
+	color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .information-worker-list {
 	display: flex;
@@ -557,10 +603,14 @@ header > .container {
 .address-link:hover,
 .address-link:focus {
 	color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 body {
 	font-family: Roboto, sans-serif;
@@ -677,6 +727,8 @@ body {
 	color: #2196f3;
 	background-color: var(--link-color);
 	cursor: pointer;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal-form-button {
 	display: block;
@@ -720,6 +772,8 @@ body {
 .btn:focus {
 	fill: var(--accent-color);
 	cursor: pointer;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .btn {
 	position: absolute;
@@ -755,12 +809,16 @@ body {
 	cursor: pointer;
 	background-color: var(--link-color);
 	color: var(--accent-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .footer-E_mail-list-item-input:hover,
 .footer-E_mail-list-item-input:focus {
 	cursor: pointer;
 	border-color: var(--accent-color);
 	color: var(--link-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .footer-E_mail-list-item-input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
