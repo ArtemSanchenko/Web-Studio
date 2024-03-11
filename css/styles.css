@@ -56,22 +56,31 @@ img {
 .modal-input:hover,
 .modal-input:focus {
 	border-color: var(--accent-color);
+}
+.modal-input {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
+	transition-duration: 2500ms;
+	transition-property: border-color;
 }
 .modal-input:hover + .modal-form-name-svg,
 .modal-input:focus + .modal-form-name-svg {
 	fill: var(--accent-color);
+}
+.modal-input + .modal-form-name-svg{
 	outline: none;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: fill;
 }
 .modal-form-input:hover,
 .modal-form-input:focus {
 	border-color: var(--accent-color);
+}
+.modal-form-input {
 	outline: none;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: border-color;
 }
 .modal-input {
 	outline: none;
@@ -82,9 +91,12 @@ img {
 .modal-form-comment:hover,
 .modal-form-comment:focus {
 	border-color: var(--accent-color);
+}
+.modal-form-comment {
 	outline: none;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: border-color;
 }
 .modal-form-name-svg {
 	fill: #212121;
@@ -182,8 +194,11 @@ img {
 	background-color: var(--link-color);
 	cursor: pointer;
 	border: none;
+}
+.hero-button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: color,border-color;
 }
 .projects-list-item-button:hover,
 .projects-list-item-button:focus {
@@ -192,8 +207,11 @@ img {
 	cursor: pointer;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.projects-list-item-button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+transition-property: color,backgrond-color;
 }
 .workers-list-title {
 	margin-bottom: 10px;
@@ -228,10 +246,12 @@ img {
 	box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06),
 		0px 1px 1px 0px rgba(0, 0, 0, 0.12);
 	cursor: pointer;
+}
+.project-link {
+transition-property: box-shadow;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
-
 .projects-list-item {
 	border-width: 1px;
 	border-color: #eee;
@@ -243,8 +263,11 @@ img {
 }
 .box:hover .project-link-container {
 	transform: translateX(0);
+}
+.box .project-link-container {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: transform;
 }
 .project-link-container {
 	position: absolute;
@@ -277,11 +300,6 @@ img {
 	background-color: var(--accent-color);
 	position: absolute;
 	bottom: 0;
-}
-.current:hover,
-.current:focus {
-	transform: scale(-0.5, 1);
-	transition-duration: 1000ms;
 }
 .current {
 	color: var(--accent-color);
@@ -387,33 +405,47 @@ header > .container {
 .information-worker-list-link:hover .workers-list-container-svg,
 .information-worker-list-link:focus .workers-list-container-svg {
 	fill: var(--link-color);
+}
+.information-worker-list-link .workers-list-container-svg {
+	transition-property: fill;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
 .clients-list-item-link:hover .clients-list-item-svg,
 .clients-list-item-link:focus .clients-list-item-svg {
 	fill: var(--accent-color);
+}
+.clients-list-item-link .clients-list-item-svg {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: fill;
 }
-
 .header-info-link:hover .header-info-item-svg,
 .header-info-link:focus .header-info-item-svg {
 	fill: var(--accent-color);
+}
+.header-info-link .header-info-item-svg {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: fill;
 }
 .header-info-link:hover,
 .header-info-link:focus {
 	color: var(--accent-color);
+}
+.header-info-link {
+	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
 	border-color: var(--accent-color);
+}
+.clients-list-item-link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: border-color;
 }
 .clients-list-item-link {
 	display: block;
@@ -436,8 +468,11 @@ header > .container {
 .footer-social-list-link:focus .footer-social-list-link-svg,
 .footer-social-list-link:hover .footer-social-list-link-svg {
 	fill: var(--link-color);
+}
+.footer-social-list-link:hover .footer-social-list-link-svg {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: fill;
 }
 .footer-social-list {
 	display: flex;
@@ -447,8 +482,11 @@ header > .container {
 .footer-social-list-link:focus,
 .footer-social-list-link:hover {
 	background-color: var(--accent-color);
+}
+.footer-social-list-link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition: background-color;
 }
 .footer .container {
 	display: flex;
@@ -510,12 +548,18 @@ header > .container {
 .information-worker-list-link:hover,
 .information-worker-list-link:focus {
 	background-color: var(--accent-color);
+}
+.information-worker-list-link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: backgroud-color;
 }
 .header-nav-link:hover,
 .header-nav-link:focus {
 	color: var(--accent-color);
+}
+.header-nav-link {
+	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
@@ -603,12 +647,18 @@ header > .container {
 .address-link:hover,
 .address-link:focus {
 	color: var(--accent-color);
+}
+.address-link {
+	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
+}
+.contacts-link {
+	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
@@ -727,6 +777,9 @@ body {
 	color: #2196f3;
 	background-color: var(--link-color);
 	cursor: pointer;
+}
+.modal-form-button {
+	transition-property: color,background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
@@ -772,8 +825,6 @@ body {
 .btn:focus {
 	fill: var(--accent-color);
 	cursor: pointer;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
 }
 .btn {
 	position: absolute;
@@ -786,6 +837,9 @@ body {
 	border-radius: 50%;
 	right: 12px;
 	top: 10px;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	transition-property: fill;
 }
 .footer-svg {
 	position: absolute;
@@ -809,6 +863,9 @@ body {
 	cursor: pointer;
 	background-color: var(--link-color);
 	color: var(--accent-color);
+}
+.footer-E_mail-list-item-button {
+	transition-property: color,background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
@@ -817,8 +874,11 @@ body {
 	cursor: pointer;
 	border-color: var(--accent-color);
 	color: var(--link-color);
+}
+.footer-E_mail-list-item-input {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	transition-property: color,border-color;
 }
 .footer-E_mail-list-item-input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
