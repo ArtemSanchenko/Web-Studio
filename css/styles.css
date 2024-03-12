@@ -930,3 +930,8 @@ body {
 .modal-form-text:last-of-type {
 	margin-bottom: 20px;
 }
+.header-nav-link:hover  + .current 
+.header-nav-link:focus  + .current {
+	transition-duration: 250ms;
+	opacity: 0.1;
+}
