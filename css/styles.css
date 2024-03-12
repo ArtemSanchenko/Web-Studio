@@ -890,8 +890,11 @@ transition-property: color,backgrond-color;
 .modal-form-text:last-of-type {
 	margin-bottom: 20px;
 }
-.header-nav-link:hover  + .current 
-.header-nav-link:focus  + .current {
+.current:first-child:hover,
+.current:first-child:focus {
+	transform: scale(-0.5, 1);
 	transition-duration: 250ms;
-	opacity: 0.1;
+}
+.current {
+
 }
