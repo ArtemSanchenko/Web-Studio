@@ -890,11 +890,10 @@ transition-property: color,backgrond-color;
 .modal-form-text:last-of-type {
 	margin-bottom: 20px;
 }
-.current:first-child:hover,
-.current:first-child:focus {
-	transform: scale(-0.5, 1);
-	transition-duration: 250ms;
+.current:hover::after {
+	display: block;
+	transform: matrix(1, 0, 0, 1, 50, 100);
 }
-.current {
-
+.current::after {
+	transition-duration: 4000ms;
 }
