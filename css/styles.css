@@ -765,9 +765,6 @@ img {
 .socialmedia_list {
 	display: flex;
 }
-
-
-
 .information-worker-list {
 	display: flex;
 	gap: 10px;
@@ -798,20 +795,14 @@ img {
 	font-weight: 400;
 	line-height: 24px; /* 171.429% */
 	letter-spacing: 0.42px;
+	transition-property: color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .contacts-link:hover,
 .contacts-link:focus {
 	color: var(--accent-color);
 }
-.contacts-link {
-	transition-property: color;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-}
-body {
-	font-family: Roboto, sans-serif;
-}
-
 .info {
 	padding-top: 72px;
 	gap: 20px;
