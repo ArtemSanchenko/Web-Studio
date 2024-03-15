@@ -402,6 +402,9 @@ img {
 	background-color: var(--link-color);
 	transform: translate(-50%, -50%) scale(1);
 	border-radius: 4px;
+	transition-property: background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .backdrop {
 	position: fixed;
