@@ -125,11 +125,6 @@ img {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
-.header-info-link .header-info-item-svg {
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
-}
 .header-info-link:hover,
 .header-info-link:focus {
 	color: var(--accent-color);
@@ -137,6 +132,9 @@ img {
 .header-info-item-svg {
 	fill: var(--add-color);
 	margin-right: 10px;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	transition-property: fill;
 }
 .hero {
 	padding-top: 200px;
@@ -191,10 +189,6 @@ img {
 .advantages {
 	padding-top: 94px;
 	padding-bottom: 94px;
-}
-.advantages > .container {
-	display: flex;
-	flex-direction: row;
 }
 .advantages-list {
 	display: flex;
@@ -307,15 +301,10 @@ img {
 .information-worker-list-link:focus .workers-list-container-svg {
 	fill: var(--link-color);
 }
-.information-worker-list-link .workers-list-container-svg {
-	transition-property: fill;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-}
 .information-worker-list-link:hover,
 .information-worker-list-link:focus {
 	background-color: var(--accent-color);
-}
+} 
 .information-worker-list-link {
 	padding: 12px;
 	display: flex;
@@ -367,6 +356,9 @@ img {
 }
 .clients-list-item-svg {
 	fill: #afb1b8;
+	transition-property: fill;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .modal {
 	position: absolute;
@@ -532,7 +524,7 @@ img {
 	padding-bottom: 60px;
 	background-color: var(--bg-color);
 }
-.footer-social-list .footer .container {
+.footer .container {
 	display: flex;
 	gap: 70px;
 }
@@ -576,8 +568,9 @@ img {
 	color: var(--link-color);
 }
 .footer-social-list {
+	display: flex;
 	gap: 10px;
-}
+} 
 .footer-social-list-link {
 	padding: 12px;
 	border-radius: 50%;
@@ -590,17 +583,15 @@ img {
 .footer-social-list-link:hover .footer-social-list-link-svg {
 	fill: var(--link-color);
 }
-.footer-social-list-link:hover .footer-social-list-link-svg {
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
-}
 .footer-social-list-link:focus,
 .footer-social-list-link:hover {
 	background-color: var(--accent-color);
 }
 .footer-social-list-link-svg {
 	fill: var(--link-color);
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	transition-property: fill;
 }
 .footer-E_mail-title {
 	font-family: var(--font-family);
@@ -739,6 +730,7 @@ img {
 .container_sites {
 	padding: 20px 24px;
 }
+
 .projects-list-item-title {
 	color: var(--main-color);
 	font-size: 18px;
@@ -751,7 +743,6 @@ img {
 	line-height: 30px; /* 187.5% */
 	letter-spacing: 0.48px;
 }
-
 .project-link-div-text {
 	font-family: var(--font-family);
 	font-weight: 400;
