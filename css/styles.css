@@ -315,6 +315,9 @@ img {
 }
 .workers-list-container-svg {
 	fill: var(--add-color);
+	transition-property: fill;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
 }
 .clients {
 	padding-top: 94px;
@@ -577,11 +580,7 @@ img {
 	display: flex;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-	transition: background-color;
-}
-.footer-social-list-link:focus .footer-social-list-link-svg,
-.footer-social-list-link:hover .footer-social-list-link-svg {
-	fill: var(--link-color);
+	transition-property: background-color;
 }
 .footer-social-list-link:focus,
 .footer-social-list-link:hover {
@@ -589,9 +588,6 @@ img {
 }
 .footer-social-list-link-svg {
 	fill: var(--link-color);
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
 }
 .footer-E_mail-title {
 	font-family: var(--font-family);
@@ -720,7 +716,7 @@ img {
 	left: 0;
 	height: 100%;
 	width: 100%;
-	transform: translateX(100%);
+	transform: translateY(100%);
 	background-color: rgba(33, 150, 243, 0.9);
 	transition: transform 900ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -832,8 +828,8 @@ body {
 	height: 100%;
 	background-color: rgba(0, 0, 0, 0.5);
 	opacity: 1;
+	transition: opacity 250ms ease-in-out;
 }
-
 .backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
