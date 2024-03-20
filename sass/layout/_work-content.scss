@@ -1,0 +1,38 @@
+
+.work {
+	padding-bottom: 94px;
+}
+.work-title {
+	color: var(--main-color);
+	text-align: center;
+	font-family: Roboto;
+	font-size: 36px;
+	line-height: normal;
+	letter-spacing: 1.08px;
+}
+.work-list {
+	display: flex;
+	gap: 30px;
+	margin-top: 50px;
+}
+.work-list-item {
+	position: relative;
+}
+.work-list-item-text {
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 14px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-transform: uppercase;
+	background-color: #2f303acb;
+	height: 70px;
+	width: 370px;
+	position: absolute;
+	bottom: 0;
+}
