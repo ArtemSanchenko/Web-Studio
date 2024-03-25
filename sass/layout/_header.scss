@@ -12,11 +12,11 @@
 .logo-accent {
 	color: $accent-color;
 }
-.header-nav-list {
+.header__list {
 	display: flex;
 	gap: 50px;
 }
-.header-nav-link {
+.header__link {
 	display: block;
 	padding-top: 24px;
 	padding-bottom: 25px;
@@ -27,10 +27,6 @@
 	font-size: 14px;
 	letter-spacing: 0.28px;
 	font-weight: 500;
-	&:hover,
-&:focus {
-	color: $accent-color;
-}
 }
 .current {
 	color: $accent-color;
@@ -46,16 +42,16 @@
 		bottom: 0;
 	}
 }
-.header-info-list {
+.info__list {
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
 }
-.header-info-link:hover .header-info-item-svg,
-.header-info-link:focus .header-info-item-svg {
+.info__link:hover .info__svg,
+.info__link:focus .info__svg {
 	fill: $accent-color;
 }
-.header-info-link {
+.info__link {
 	display: flex;
 	align-items: center;
 	color: $add-color;
@@ -69,7 +65,7 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 }
-.header-info-item-svg {
+.info__svg {
 	fill: $add-color;
 	margin-right: 10px;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
