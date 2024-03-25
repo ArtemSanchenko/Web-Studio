@@ -2,17 +2,17 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.clients-title {
+.clients__title {
 	font-size: 36px;
 	text-align: center;
 }
-.clients-list {
+.clients__list {
 	display: flex;
 	gap: 30px;
 	margin-top: 50px;
 	justify-content: center;
 }
-.clients-list-item-link {
+.clients__link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: border-color;
@@ -27,16 +27,16 @@
 		border-color: $accent-color;
 	}
 }
-.clients-list-item-link:hover .clients-list-item-svg,
-.clients-list-item-link:focus .clients-list-item-svg {
+.clients__link:hover .clients__svg,
+.clients__link:focus .clients__svg {
 	fill: $accent-color;
 }
-.clients-list-item-link .clients-list-item-svg {
+.clients__link .clients__svg {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: fill;
 }
-.clients-list-item-svg {
+.clients__svg {
 	fill: #afb1b8;
 	transition-property: fill;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

@@ -17,22 +17,22 @@
 	font-style: normal;
 	margin-top: 20px;
 }
-.footer-address-list:first-child {
+.footer-address__list:first-child {
 	color: #fff;
 	font-family: Roboto;
 }
 
-.contact-item:not(:first-child) {
+.contact__item:not(:first-child) {
 	margin-top: 9px;
 }
-.contact-item {
+.contact__item {
 	color: rgba(255, 255, 255, 0.6);
 	font-family: Roboto;
 	font-size: 14px;
 	line-height: 24px;
 	letter-spacing: 0.42px;
 }
-.contacts-link {
+.contacts__link {
 	color: $add-color;
 	font-family: Roboto;
 	font-size: 14px;
@@ -48,7 +48,7 @@
 		color: $accent-color;
 	}
 }
-.address-link {
+.address__link {
 	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
@@ -64,16 +64,16 @@
 		color: $accent-color;
 	}
 }
-.footer-social-list-title {
+.footer-social__title {
 	text-transform: uppercase;
 	margin-bottom: 20px;
 	color: $link-color;
 }
-.footer-social-list {
+.footer-social__list {
 	display: flex;
 	gap: 10px;
 }
-.footer-social-list-link {
+.footer-social__link {
 	padding: 12px;
 	border-radius: 50%;
 	display: flex;
@@ -82,14 +82,14 @@
 	transition-property: background-color;
 	background-color: #ffffff10;
 }
-.footer-social-list-link-svg {
+.footer-social__svg {
 	fill: $link-color;
 	&:focus,
 	&:hover {
 		background-color: $accent-color;
 	}
 }
-.footer-E_mail-title {
+.footer__title {
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -98,7 +98,7 @@
 	color: $link-color;
 	margin-bottom: 20px;
 }
-.footer-E_mail-list-item-input {
+.footer-E-mail__input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	width: 358px;
@@ -117,7 +117,7 @@
 		color: $link-color;
 	}
 }
-.footer-E_mail-list-item-button {
+.footer-E-mail__button {
 	transition-property: color, background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
@@ -139,7 +139,7 @@
 		color: $accent-color;
 	}
 }
-.footer-svg {
+.footer__svg {
 	position: absolute;
 	margin-left: 10px;
 }
