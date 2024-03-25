@@ -1,6 +1,6 @@
 .btn:hover,
 .btn:focus {
-	fill: var(--accent-color);
+	fill: $accent-color;
 	cursor: pointer;
 }
 .btn {

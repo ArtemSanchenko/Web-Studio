@@ -34,7 +34,7 @@
 	background-image: url(../images/austronaut_img.svg);
 }
 .advantages-title {
-	color: var(--main-color);
+	color: $main-color;
 	font-family: Roboto;
 	font-size: 14px;
 	line-height: normal;
@@ -43,7 +43,7 @@
 	margin-bottom: 10px;
 }
 .advantages-text {
-	color: var(--add-color);
+	color: $add-color;
 	font-family: Roboto;
 	font-size: 14px;
 	line-height: 24px;

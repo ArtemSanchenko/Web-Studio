@@ -5,7 +5,7 @@
 	background-color: #f5f4fa;
 }
 .workers-title {
-	color: var(--main-color);
+	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 36px;
@@ -20,7 +20,7 @@
 .workers-list-item {
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-	background-color: var(--link-color);
+	background-color: $link-color;
 	border-radius: 0px 0px 4px 4px;
 }
 .information_worker {
@@ -28,7 +28,7 @@
 }
 .workers-list-title {
 	margin-bottom: 10px;
-	color: var(--main-color);
+	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 16px;
@@ -37,7 +37,7 @@
 	letter-spacing: 0.48px;
 }
 .workers-list-text {
-	color: var(--add-color);
+	color: $add-color;
 	text-align: center;
 	font-family: Roboto;
 	line-height: normal;
@@ -51,11 +51,11 @@
 }
 .information-worker-list-link:hover .workers-list-container-svg,
 .information-worker-list-link:focus .workers-list-container-svg {
-	fill: var(--link-color);
+	fill: $link-color;
 }
 .information-worker-list-link:hover,
 .information-worker-list-link:focus {
-	background-color: var(--accent-color);
+	background-color: $accent-color;
 } 
 .information-worker-list-link {
 	padding: 12px;
@@ -66,7 +66,7 @@
 	transition-property: backgroud-color;
 }
 .workers-list-container-svg {
-	fill: var(--add-color);
+	fill: $add-color;
 	transition-property: fill;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;

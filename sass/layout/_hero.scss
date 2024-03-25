@@ -25,8 +25,8 @@
 }
 .hero-button:hover,
 .hero-button:focus {
-	color: var(--accent-color);
-	background-color: var(--link-color);
+	color: $accent-color;
+	background-color: $link-color;
 	cursor: pointer;
 	border: none;
 }

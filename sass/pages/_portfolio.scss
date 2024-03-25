@@ -11,8 +11,8 @@
 }
 .projects-list-item-button:hover,
 .projects-list-item-button:focus {
-	background-color: var(--accent-color);
-	color: var(--link-color);
+	background-color: $accent-color;
+	color: $link-color;
 	cursor: pointer;
 	box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08),
 		0px 3px 1px 0px rgba(0, 0, 0, 0.1);
@@ -83,19 +83,19 @@
 	padding: 20px 24px;
 }
 .projects-list-item-title {
-	color: var(--main-color);
+	color: $main-color;
 	font-size: 18px;
 	line-height: 36px; /* 200% */
 	letter-spacing: 1.08px;
 }
 .projects-list-item-text {
-	color: var(--add-color);
+	color: $add-color;
 	font-family: Roboto;
 	line-height: 30px; /* 187.5% */
 	letter-spacing: 0.48px;
 }
 .project-link-div-text {
-	font-family: var(--font-family);
+	font-family: $font-family;
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 156%;

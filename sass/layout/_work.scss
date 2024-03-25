@@ -3,7 +3,7 @@
 	padding-bottom: 94px;
 }
 .work-title {
-	color: var(--main-color);
+	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
 	font-size: 36px;
@@ -19,7 +19,7 @@
 	position: relative;
 }
 .work-list-item-text {
-	font-family: var(--font-family);
+	font-family: $font-family;
 	font-weight: 700;
 	font-size: 14px;
 	letter-spacing: 0.03em;

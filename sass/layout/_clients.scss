@@ -15,7 +15,7 @@
 }
 .clients-list-item-link:hover,
 .clients-list-item-link:focus {
-	border-color: var(--accent-color);
+	border-color: $accent-color;
 }
 .clients-list-item-link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -30,7 +30,7 @@
 }
 .clients-list-item-link:hover .clients-list-item-svg,
 .clients-list-item-link:focus .clients-list-item-svg {
-	fill: var(--accent-color);
+	fill: $accent-color;
 }
 .clients-list-item-link .clients-list-item-svg {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
