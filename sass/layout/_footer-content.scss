@@ -1,4 +1,3 @@
-
 .footer {
 	padding-top: 60px;
 	padding-bottom: 60px;
@@ -33,10 +32,6 @@
 	line-height: 24px;
 	letter-spacing: 0.42px;
 }
-.contacts-link:hover,
-.contacts-link:focus {
-	color: $accent-color;
-}
 .contacts-link {
 	color: $add-color;
 	font-family: Roboto;
@@ -48,10 +43,10 @@
 	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-}
-.address-link:hover,
-.address-link:focus {
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 .address-link {
 	transition-property: color;
@@ -64,6 +59,10 @@
 	font-weight: 400;
 	line-height: 24px;
 	letter-spacing: 0.42px;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
 .footer-social-list-title {
 	text-transform: uppercase;
@@ -73,7 +72,7 @@
 .footer-social-list {
 	display: flex;
 	gap: 10px;
-} 
+}
 .footer-social-list-link {
 	padding: 12px;
 	border-radius: 50%;
@@ -83,12 +82,12 @@
 	transition-property: background-color;
 	background-color: #ffffff10;
 }
-.footer-social-list-link:focus,
-.footer-social-list-link:hover {
-	background-color: $accent-color;
-}
 .footer-social-list-link-svg {
 	fill: $link-color;
+	&:focus,
+	&:hover {
+		background-color: $accent-color;
+	}
 }
 .footer-E_mail-title {
 	font-family: $font-family;
@@ -98,12 +97,6 @@
 	text-transform: uppercase;
 	color: $link-color;
 	margin-bottom: 20px;
-}
-.footer-E_mail-list-item-input:hover,
-.footer-E_mail-list-item-input:focus {
-	cursor: pointer;
-	border-color: $accent-color;
-	color: $link-color;
 }
 .footer-E_mail-list-item-input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
@@ -117,12 +110,12 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: color, border-color;
-}
-.footer-E_mail-list-item-button:hover,
-.footer-E_mail-list-item-button:focus {
-	cursor: pointer;
-	background-color: $link-color;
-	color: $accent-color;
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		border-color: $accent-color;
+		color: $link-color;
+	}
 }
 .footer-E_mail-list-item-button {
 	transition-property: color, background-color;
@@ -139,6 +132,12 @@
 	color: $link-color;
 	background-color: #2196f3;
 	border-color: #2196f3;
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		background-color: $link-color;
+		color: $accent-color;
+	}
 }
 .footer-svg {
 	position: absolute;

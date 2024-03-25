@@ -1,4 +1,3 @@
-
 .workers {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -53,10 +52,7 @@
 .information-worker-list-link:focus .workers-list-container-svg {
 	fill: $link-color;
 }
-.information-worker-list-link:hover,
-.information-worker-list-link:focus {
-	background-color: $accent-color;
-} 
+
 .information-worker-list-link {
 	padding: 12px;
 	display: flex;
@@ -64,6 +60,10 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: backgroud-color;
+	&:hover,
+	&:focus {
+		background-color: $accent-color;
+	}
 }
 .workers-list-container-svg {
 	fill: $add-color;

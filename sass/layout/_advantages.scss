@@ -1,4 +1,3 @@
-
 .advantages {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -9,29 +8,29 @@
 }
 .advantages-item {
 	flex-basis: calc((100% - 90px) / 4);
-}
-.advantages-item::before {
-	content: "";
-	display: block;
-	margin: 0 auto;
-	background-image: url(../images/antenna_img.svg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: 70px 70px;
-	margin-bottom: 30px;
-	background-color: #f5f5f5;
-	width: 270px;
-	height: 120px;
-	border-radius: 4px;
-}
-.advantages-item:nth-child(3)::before {
-	background-image: url(../images/computer_img.svg);
-}
-.advantages-item:nth-child(2)::before {
-	background-image: url(../images/clock_img.svg);
-}
-.advantages-item:nth-child(4)::before {
-	background-image: url(../images/austronaut_img.svg);
+	&::before {
+		content: "";
+		display: block;
+		margin: 0 auto;
+		background-image: url(../images/antenna_img.svg);
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 70px 70px;
+		margin-bottom: 30px;
+		background-color: #f5f5f5;
+		width: 270px;
+		height: 120px;
+		border-radius: 4px;
+	}
+	&:nth-child(3)::before {
+		background-image: url(../images/computer_img.svg);
+	}
+	&:nth-child(2)::before {
+		background-image: url(../images/clock_img.svg);
+	}
+	&:nth-child(4)::before {
+		background-image: url(../images/austronaut_img.svg);
+	}
 }
 .advantages-title {
 	color: $main-color;

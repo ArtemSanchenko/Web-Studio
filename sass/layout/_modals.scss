@@ -1,4 +1,3 @@
-
 .modal {
 	position: absolute;
 	top: 50%;
@@ -25,7 +24,7 @@
 }
 .backdrop.is-hidden .modal {
 	transform: translate(-50%, -50%) scale(0.5);
-  }
+}
 .backdrop.is-hidden {
 	opacity: 0;
 	pointer-events: none;
@@ -53,10 +52,7 @@
 .modal-form-text:last-of-type {
 	margin-bottom: 20px;
 }
-.modal-input:hover,
-.modal-input:focus {
-	border-color: $accent-color;
-}
+
 .modal-input {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
@@ -68,6 +64,10 @@
 	padding: 11px;
 	margin-top: 4px;
 	padding-left: 40px;
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+	}
 }
 .modal-input:hover + .modal-form-name-svg,
 .modal-input:focus + .modal-form-name-svg {
@@ -82,10 +82,7 @@
 	transition-duration: 250ms;
 	transition-property: fill;
 }
-.modal-form-comment:hover,
-.modal-form-comment:focus {
-	border-color: $accent-color;
-}
+
 .modal-form-comment {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
@@ -104,6 +101,10 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: border-color;
+	&:hover,
+	&:focus {
+		border-color: $accent-color;
+	}
 }
 .modal-form-container {
 	display: flex;
@@ -131,12 +132,6 @@
 	text-decoration-skip-ink: none;
 	color: $accent-color;
 }
-.modal-form-button:hover,
-.modal-form-button:focus {
-	color: #2196f3;
-	background-color: $link-color;
-	cursor: pointer;
-}
 .modal-form-button {
 	display: block;
 	margin: 0 auto;
@@ -157,4 +152,10 @@
 	transition-property: color, background-color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	&:hover,
+	&:focus {
+		color: #2196f3;
+		background-color: $link-color;
+		cursor: pointer;
+	}
 }

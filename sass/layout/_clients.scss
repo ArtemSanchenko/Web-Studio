@@ -13,10 +13,6 @@
 	margin-top: 50px;
 	justify-content: center;
 }
-.clients-list-item-link:hover,
-.clients-list-item-link:focus {
-	border-color: $accent-color;
-}
 .clients-list-item-link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
@@ -27,6 +23,10 @@
 	border-width: 1px;
 	border-style: solid;
 	padding: 16px 32px 16px 32px;
+	&:hover,
+&:focus {
+	border-color: $accent-color;
+}
 }
 .clients-list-item-link:hover .clients-list-item-svg,
 .clients-list-item-link:focus .clients-list-item-svg {
