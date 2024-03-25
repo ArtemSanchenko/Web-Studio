@@ -11,7 +11,7 @@
 	background-position: center;
 	background-size: cover;
 }
-.hero-title {
+.hero__title {
 	color: #fff;
 	text-align: center;
 	font-family: Roboto;
@@ -22,7 +22,7 @@
 	text-transform: uppercase;
 	margin: 0 auto;
 }
-.hero-button {
+.hero__button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: color, border-color;

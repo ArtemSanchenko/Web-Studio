@@ -2,7 +2,7 @@
 .work {
 	padding-bottom: 94px;
 }
-.work-title {
+.work__title {
 	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
@@ -10,16 +10,16 @@
 	line-height: normal;
 	letter-spacing: 1.08px;
 }
-.work-list {
+.work__list {
 	display: flex;
 	gap: 30px;
 	margin-top: 50px;
 }
-.work-list-item {
+.work__item {
 	position: relative;
 }
-.work-list-item-text {
-	font-family: $font-family;
+.work__text {
+	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
 	letter-spacing: 0.03em;

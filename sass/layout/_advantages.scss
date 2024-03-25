@@ -2,11 +2,11 @@
 	padding-top: 94px;
 	padding-bottom: 94px;
 }
-.advantages-list {
+.advantages__list {
 	display: flex;
 	gap: 30px;
 }
-.advantages-item {
+.advantages__item {
 	flex-basis: calc((100% - 90px) / 4);
 	&::before {
 		content: "";
@@ -32,7 +32,7 @@
 		background-image: url(../images/austronaut_img.svg);
 	}
 }
-.advantages-title {
+.advantages__title {
 	color: $main-color;
 	font-family: Roboto;
 	font-size: 14px;
@@ -41,7 +41,7 @@
 	text-transform: uppercase;
 	margin-bottom: 10px;
 }
-.advantages-text {
+.advantages__text {
 	color: $add-color;
 	font-family: Roboto;
 	font-size: 14px;

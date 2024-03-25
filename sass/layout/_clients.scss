@@ -1,4 +1,3 @@
-
 .clients {
 	padding-top: 94px;
 	padding-bottom: 94px;
@@ -24,9 +23,9 @@
 	border-style: solid;
 	padding: 16px 32px 16px 32px;
 	&:hover,
-&:focus {
-	border-color: $accent-color;
-}
+	&:focus {
+		border-color: $accent-color;
+	}
 }
 .clients-list-item-link:hover .clients-list-item-svg,
 .clients-list-item-link:focus .clients-list-item-svg {

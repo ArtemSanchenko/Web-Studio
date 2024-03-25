@@ -3,7 +3,7 @@
 	padding-bottom: 94px;
 	background-color: #f5f4fa;
 }
-.workers-title {
+.workers__title {
 	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
@@ -11,21 +11,21 @@
 	line-height: normal;
 	letter-spacing: 1.08px;
 }
-.workers-list {
+.workers__list {
 	display: flex;
 	gap: 30px;
 	margin-top: 50px;
 }
-.workers-list-item {
+.workers__item {
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	background-color: $link-color;
 	border-radius: 0px 0px 4px 4px;
 }
-.information_worker {
+.information__worker {
 	padding: 30px 0;
 }
-.workers-list-title {
+.workers__title {
 	margin-bottom: 10px;
 	color: $main-color;
 	text-align: center;
@@ -35,25 +35,25 @@
 	line-height: normal;
 	letter-spacing: 0.48px;
 }
-.workers-list-text {
+.workers__text {
 	color: $add-color;
 	text-align: center;
 	font-family: Roboto;
 	line-height: normal;
 	letter-spacing: 0.48px;
 }
-.information-worker-list {
+.information__list {
 	display: flex;
 	gap: 10px;
 	margin-top: 28px;
 	justify-content: center;
 }
-.information-worker-list-link:hover .workers-list-container-svg,
-.information-worker-list-link:focus .workers-list-container-svg {
+.information__link:hover .workers__svg,
+.information__link:focus .workers__svg {
 	fill: $link-color;
 }
 
-.information-worker-list-link {
+.information__link {
 	padding: 12px;
 	display: flex;
 	border-radius: 50%;
@@ -65,7 +65,7 @@
 		background-color: $accent-color;
 	}
 }
-.workers-list-container-svg {
+.workers__svg {
 	fill: $add-color;
 	transition-property: fill;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
