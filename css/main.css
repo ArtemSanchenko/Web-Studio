@@ -548,7 +548,7 @@ img {
   color: #757575;
 }
 
-.modal-form__text:last-of-type {
+.modal__text:last-of-type {
   margin-bottom: 20px;
 }
 
@@ -833,7 +833,7 @@ img {
   border: none;
 }
 
-.modal-form__button {
+.modal__button {
   display: block;
   margin: 0 auto;
   text-align: center;
@@ -858,7 +858,7 @@ img {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
-.modal-form__button:hover, .modal-form__button:focus {
+.modal__button:hover, .modal__button:focus {
   color: #2196f3;
   background-color: #fff;
   cursor: pointer;
