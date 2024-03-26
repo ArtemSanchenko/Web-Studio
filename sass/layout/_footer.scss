@@ -7,25 +7,29 @@
 	display: flex;
 	gap: 70px;
 }
-.footer-logo {
+.footer__logo {
 	color: white;
 	font-family: Raleway;
 	font-size: 26px;
 	letter-spacing: 0.78px;
+	margin-right: 93px;
+}
+.logo-accent {
+	color: $accent-color;
 }
 .address {
 	font-style: normal;
 	margin-top: 20px;
 }
-.footer-address__list:first-child {
+.address__list:first-child {
 	color: #fff;
 	font-family: Roboto;
 }
 
-.contact__item:not(:first-child) {
+.adress__item:not(:first-child) {
 	margin-top: 9px;
 }
-.contact__item {
+.adress__item {
 	color: rgba(255, 255, 255, 0.6);
 	font-family: Roboto;
 	font-size: 14px;
@@ -89,7 +93,7 @@
 		background-color: $accent-color;
 	}
 }
-.footer__title {
+.footer-join__title {
 	font-family: Roboto;
 	font-weight: 700;
 	font-size: 14px;
@@ -98,7 +102,7 @@
 	color: $link-color;
 	margin-bottom: 20px;
 }
-.footer-E-mail__input {
+.footer-join__input {
 	border: 1px solid rgba(255, 255, 255, 0.3);
 	border-radius: 4px;
 	width: 358px;
