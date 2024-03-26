@@ -22,29 +22,3 @@
 	text-transform: uppercase;
 	margin: 0 auto;
 }
-.hero__button {
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: color, border-color;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 32px;
-	padding-right: 32px;
-	font-family: Roboto;
-	color: #ffffff;
-	background-color: #2196f3;
-	font-weight: 700;
-	line-height: 1.87;
-	border: none;
-	display: block;
-	margin: 0 auto;
-	margin-top: 30px;
-	border-radius: 4px;
-	&:hover,
-	&:focus {
-		color: $accent-color;
-		background-color: $link-color;
-		cursor: pointer;
-		border: none;
-	}
-}

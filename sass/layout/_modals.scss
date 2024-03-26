@@ -29,6 +29,26 @@
 	opacity: 0;
 	pointer-events: none;
 }
+.btn-close {
+	position: absolute;
+	display: flex;
+	background-color: transparent;
+	border-style: solid;
+	border-color: rgba(0, 0, 0, 0.1);
+	border-width: 2px;
+	padding: 6px;
+	border-radius: 50%;
+	right: 12px;
+	top: 10px;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	transition-property: fill;
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+		cursor: pointer;
+	}
+}
 .modal__text {
 	margin-bottom: 12px;
 	font-family: Roboto;
@@ -38,7 +58,7 @@
 	text-align: center;
 	color: #212121;
 }
-.modal-form__text {
+.modal__label {
 	display: block;
 	position: relative;
 	margin-bottom: 10px;
@@ -83,7 +103,7 @@
 	transition-property: fill;
 }
 
-.modal-form__comment {
+.modal__comment {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	width: 100%;
@@ -106,7 +126,7 @@
 		border-color: $accent-color;
 	}
 }
-.modal-form__container {
+.modal__container {
 	display: flex;
 	justify-content: center;
 	font-family: Roboto;
@@ -119,7 +139,7 @@
 	gap: 8.28px;
 	align-items: center;
 }
-.modal-form__input {
+.modal__input {
 	outline: none;
 	width: 448px;
 	height: 120px;
@@ -127,35 +147,8 @@
 	height: 16px;
 	fill: #212121;
 }
-.modal-form__link {
+.modal__link {
 	text-decoration: underline;
 	text-decoration-skip-ink: none;
 	color: $accent-color;
-}
-.modal-form__button {
-	display: block;
-	margin: 0 auto;
-	text-align: center;
-	border-radius: 4px;
-	margin-top: 30px;
-	width: 200px;
-	height: 50px;
-	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-	background-color: $accent-color;
-	font-family: Roboto;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 187%;
-	letter-spacing: 0.06em;
-	color: $link-color;
-	border: #2196f3;
-	transition-property: color, background-color;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	&:hover,
-	&:focus {
-		color: #2196f3;
-		background-color: $link-color;
-		cursor: pointer;
-	}
 }

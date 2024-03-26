@@ -1,20 +1,76 @@
-.btn {
-	position: absolute;
-	display: flex;
-	background-color: transparent;
-	border-style: solid;
-	border-color: rgba(0, 0, 0, 0.1);
-	border-width: 2px;
-	padding: 6px;
-	border-radius: 50%;
-	right: 12px;
-	top: 10px;
+
+.hero__button {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-	transition-property: fill;
+	transition-property: color, border-color;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 32px;
+	padding-right: 32px;
+	font-family: Roboto;
+	color: #ffffff;
+	background-color: #2196f3;
+	font-weight: 700;
+	line-height: 1.87;
+	border: none;
+	display: block;
+	margin: 0 auto;
+	margin-top: 30px;
+	border-radius: 4px;
 	&:hover,
 	&:focus {
-		fill: $accent-color;
+		color: $accent-color;
+		background-color: $link-color;
 		cursor: pointer;
+		border: none;
+	}
+}
+.modal-form__button {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	border-radius: 4px;
+	margin-top: 30px;
+	width: 200px;
+	height: 50px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background-color: $accent-color;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 187%;
+	letter-spacing: 0.06em;
+	color: $link-color;
+	border: #2196f3;
+	transition-property: color, background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	&:hover,
+	&:focus {
+		color: #2196f3;
+		background-color: $link-color;
+		cursor: pointer;
+	}
+}
+.footer-E-mail__button {
+	transition-property: color, background-color;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	transition-duration: 250ms;
+	border-radius: 4px;
+	padding: 10px 62px 10px 28px;
+	font-family: Roboto;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 187%;
+	letter-spacing: 0.06em;
+	text-align: center;
+	color: $link-color;
+	background-color: #2196f3;
+	border-color: #2196f3;
+	&:hover,
+	&:focus {
+		cursor: pointer;
+		background-color: $link-color;
+		color: $accent-color;
 	}
 }
