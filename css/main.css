@@ -99,12 +99,15 @@ img {
   letter-spacing: 0.28px;
   font-weight: 500;
 }
+.nav__link:hover, .nav__link:focus {
+  color: #2196f3;
+}
 
-.current {
+.nav__link--current {
   color: #2196f3;
   position: relative;
 }
-.current::after {
+.nav__link--current::after {
   display: block;
   content: " ";
   width: 100%;
@@ -158,8 +161,7 @@ img {
   -webkit-transition-property: fill;
   transition-property: fill;
 }
-.info__svg .info__link:hover .info__svg,
-.info__svg .info__link:focus .info__svg {
+.info__link:hover .info__svg, .info__link:focus .info__svg {
   fill: #2196f3;
 }
 
@@ -361,11 +363,6 @@ img {
           justify-content: center;
 }
 
-.information__link:hover .workers__svg,
-.information__link:focus .workers__svg {
-  fill: #fff;
-}
-
 .information__link {
   padding: 12px;
   display: -webkit-box;
@@ -391,6 +388,9 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+.information__link:hover .information-list__svg, .information__link:focus .information-list__svg {
+  fill: #fff;
 }
 
 .clients {
@@ -432,11 +432,6 @@ img {
   border-color: #2196f3;
 }
 
-.clients__link:hover .clients__svg,
-.clients__link:focus .clients__svg {
-  fill: #2196f3;
-}
-
 .clients__link .clients__svg {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -454,6 +449,9 @@ img {
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
+}
+.clients__link:hover .clients__svg, .clients__link:focus .clients__svg {
+  fill: #2196f3;
 }
 
 .modal {
@@ -571,11 +569,6 @@ img {
   border-color: #2196f3;
 }
 
-.modal__input:hover + .modal__svg,
-.modal__input:focus + .modal__svg {
-  fill: #2196f3;
-}
-
 .modal__svg {
   fill: #212121;
   position: absolute;
@@ -587,6 +580,9 @@ img {
           transition-duration: 250ms;
   -webkit-transition-property: fill;
   transition-property: fill;
+}
+.modal__input:hover + .modal__svg, .modal__input:focus + .modal__svg {
+  fill: #2196f3;
 }
 
 .modal__comment {
@@ -615,7 +611,7 @@ img {
   border-color: #2196f3;
 }
 
-.modal__container {
+.modal__label-rules {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -981,7 +977,6 @@ img {
   position: relative;
   overflow: hidden;
 }
-
 .box:hover .project-link__container {
   -webkit-transform: translateX(0);
       -ms-transform: translateX(0);

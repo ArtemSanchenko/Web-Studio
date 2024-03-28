@@ -27,13 +27,17 @@
 	font-size: 14px;
 	letter-spacing: 0.28px;
 	font-weight: 500;
+	&:hover,
+	&:focus {
+		color: $accent-color;
+	}
 }
-.current {
+.nav__link--current {
 	color: $accent-color;
 	position: relative;
 	&::after {
 		display: block;
-		content: " ";
+		content: ' ';
 		width: 100%;
 		height: 4px;
 		border-radius: 2px;
@@ -71,8 +75,8 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: fill;
-	.info__link:hover .info__svg,
-	.info__link:focus .info__svg {
+	.info__link:hover &,
+	.info__link:focus & {
 		fill: $accent-color;
 	}
 }

@@ -48,11 +48,6 @@
 	margin-top: 28px;
 	justify-content: center;
 }
-.information__link:hover .workers__svg,
-.information__link:focus .workers__svg {
-	fill: $link-color;
-}
-
 .information__link {
 	padding: 12px;
 	display: flex;
@@ -70,4 +65,8 @@
 	transition-property: fill;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
+	.information__link:hover &,
+.information__link:focus & {
+	fill: $link-color;
+}
 }

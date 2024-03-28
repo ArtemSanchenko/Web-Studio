@@ -73,7 +73,7 @@
 	margin-bottom: 20px;
 }
 
-.modal__input{
+.modal__input {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: border-color;
@@ -89,10 +89,6 @@
 		border-color: $accent-color;
 	}
 }
-.modal__input:hover + .modal__svg,
-.modal__input:focus + .modal__svg {
-	fill: $accent-color;
-}
 .modal__svg {
 	fill: #212121;
 	position: absolute;
@@ -101,6 +97,10 @@
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: fill;
+	.modal__input:hover + &,
+	.modal__input:focus + & {
+		fill: $accent-color;
+	}
 }
 
 .modal__comment {
@@ -126,7 +126,7 @@
 		border-color: $accent-color;
 	}
 }
-.modal__container {
+.modal__label-rules {
 	display: flex;
 	justify-content: center;
 	font-family: Roboto;
