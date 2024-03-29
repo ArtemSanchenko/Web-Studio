@@ -752,7 +752,7 @@ img {
   margin-bottom: 20px;
 }
 
-.footer-join__input {
+.footer-name__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   width: 358px;
@@ -769,7 +769,7 @@ img {
   -webkit-transition-property: color, border-color;
   transition-property: color, border-color;
 }
-.footer-join__input:hover, .footer-join__input:focus {
+.footer-name__input:hover, .footer-name__input:focus {
   cursor: pointer;
   border-color: #2196f3;
   color: #fff;
