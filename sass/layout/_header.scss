@@ -2,23 +2,12 @@
 	display: flex;
 	align-items: baseline;
 }
-.header__logo {
-	color: #000;
-	font-family: Raleway;
-	font-size: 26px;
-	letter-spacing: 0.78px;
-	margin-right: 93px;
-}
-.logo__accent {
-	color: $accent-color;
-}
 .nav__list {
 	display: flex;
 	gap: 50px;
 }
 .nav__link {
 	display: block;
-	padding-top: 24px;
 	padding-bottom: 25px;
 	transition-property: color;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

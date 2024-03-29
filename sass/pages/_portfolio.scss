@@ -59,14 +59,14 @@
 		cursor: pointer;
 	}
 }
-.box {
+.projects-container {
 	position: relative;
 	overflow: hidden;
-	&:hover .project-link__container {
+	&:hover .projects-container__text {
 		transform: translateX(0);
 	}
 }
-.project-link__container {
+.projects-container__text {
 	position: absolute;
 	padding: 63px 24px;
 	top: 0;
@@ -95,7 +95,7 @@
 	line-height: 30px; /* 187.5% */
 	letter-spacing: 0.48px;
 }
-.projects-list__text {
+.project-list__overlay-text {
 	font-weight: 400;
 	font-size: 18px;
 	line-height: 156%;
