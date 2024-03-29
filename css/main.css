@@ -994,7 +994,7 @@ img {
   letter-spacing: 1.08px;
 }
 
-.project-link__text {
+.projects-container__text {
   color: #fff;
   font-family: Roboto;
   line-height: 30px; /* 187.5% */
