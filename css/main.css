@@ -302,18 +302,19 @@ img {
   bottom: 0;
 }
 
-.worker {
+.workers {
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: #f5f4fa;
-  padding: 60px 0;
 }
 
 .workers__title {
-  color: #757575;
+  color: #212121;
   text-align: center;
+  font-size: 36px;
   line-height: normal;
   letter-spacing: 1.08px;
-  font-size: 28px;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 .worker__list {
@@ -421,7 +422,7 @@ img {
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
 }
-.information__link:hover .worker-social__svg, .information__link:focus .worker-social__svg {
+.worker-social__link:hover .worker-social__svg, .worker-social__link:focus .worker-social__svg {
   fill: #fff;
 }
 
@@ -566,7 +567,7 @@ img {
   color: #212121;
 }
 
-.name-modal__label {
+.modal__label {
   display: block;
   position: relative;
   margin-bottom: 10px;
@@ -582,7 +583,7 @@ img {
   margin-bottom: 20px;
 }
 
-.name-modal__input {
+.modal__input {
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition-duration: 250ms;
@@ -597,11 +598,11 @@ img {
   margin-top: 4px;
   padding-left: 40px;
 }
-.name-modal__input:hover, .name-modal__input:focus {
+.modal__input:hover, .modal__input:focus {
   border-color: #2196f3;
 }
 
-.name-modal__svg {
+.modal__svg {
   fill: #212121;
   position: absolute;
   bottom: 11px;
@@ -613,11 +614,11 @@ img {
   -webkit-transition-property: fill;
   transition-property: fill;
 }
-.modal__input:hover + .name-modal__svg, .modal__input:focus + .name-modal__svg {
+.modal__input:hover + .modal__svg, .modal__input:focus + .modal__svg {
   fill: #2196f3;
 }
 
-.name-modal__comment {
+.modal__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 100%;
@@ -639,7 +640,7 @@ img {
   -webkit-transition-property: border-color;
   transition-property: border-color;
 }
-.name-modal__comment:hover, .name-modal__comment:focus {
+.modal__comment:hover, .modal__comment:focus {
   border-color: #2196f3;
 }
 

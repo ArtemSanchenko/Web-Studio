@@ -331,33 +331,33 @@
 					<svg class="btn-close__icon" width="14px" height="14px"><use href="./images/symboldefts.svg#buttonclose"></use></svg>
 				</button>
 				<p class="modal__text">Залиште свої дані, ми вам передзвонимо</p>
-				<form class="name-modal__form" action="">
-					<label class="name-modal__label" >
+				<form class="modal__form" action="">
+					<label class="modal__label" >
 						Ім'я
-						<input class="name-modal__input" required type="text" />
-						<svg width="15" height="15" class="name-modal__svg">
+						<input name="name" class="modal__input" required type="text" />
+						<svg width="15" height="15" class="modal__svg">
 							<use href="./images/symboldefts.svg#icon-person"></use>
 						</svg>
 					</label>
-					<label class="name-modal__label" >
+					<label class="modal__label" >
 						Телефон
-						<input class="name-modal__input" required type="tel" />
-						<svg width="15" height="15" class="name-modal__svg">
+						<input name="tel" class="modal__input" required type="tel" />
+						<svg width="15" height="15" class="modal__svg">
 							<use href="./images/symboldefts.svg#icon-telephone"></use>
 						</svg>
 					</label>
-					<label class="name-modal__label" >
+					<label class="modal__label" >
 						Пошта
-						<input class="name-modal__input" required type="email" />
-						<svg width="15" height="15" class="name-modal__svg">
+						<input name="email" class="modal__input" required type="email" />
+						<svg width="15" height="15" class="modal__svg">
 							<use href="./images/symboldefts.svg#icon-mail"></use>
 						</svg>
 					</label>
-					<label class="name-modal__label">
+					<label class="modal__label">
 						Комментар
 						<textarea
 							placeholder="Введіть текст"
-							class="name-modal__comment"
+							class="modal__comment"
 							name=""
 							id=""
 							cols="30"
@@ -365,7 +365,7 @@
 						></textarea>
 					</label>
 					<label class="modal__label-rules" >
-						<input class="modal__input-rules" required type="checkbox" />
+						<input name="checkbox" class="modal__input-rules" required type="checkbox" />
 						Погоджуюся з розсилкою та приймаю
 						<a
 							class="modal__link-rules link"
@@ -435,7 +435,7 @@
 					<h3 class="footer-join__title">Підпишіться на розсилку</h3>
 					<form class="footer-join__form" action="">					
 							<label class="footer-E-mail__label">
-								<input placeholder="E-mail" class="footer-name__input" required type="email" />
+								<input name="email" placeholder="E-mail" class="footer-name__input" required type="email" />
 							</label>
 							<button class="footer-join__button" type="submit">
 								Підписатися

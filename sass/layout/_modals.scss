@@ -58,7 +58,7 @@
 	text-align: center;
 	color: #212121;
 }
-.name-modal__label {
+.modal__label {
 	display: block;
 	position: relative;
 	margin-bottom: 10px;
@@ -73,7 +73,7 @@
 	margin-bottom: 20px;
 }
 
-.name-modal__input {
+.modal__input {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
 	transition-property: border-color;
@@ -89,7 +89,7 @@
 		border-color: $accent-color;
 	}
 }
-.name-modal__svg {
+.modal__svg {
 	fill: #212121;
 	position: absolute;
 	bottom: 11px;
@@ -103,7 +103,7 @@
 	}
 }
 
-.name-modal__comment {
+.modal__comment {
 	border: 1px solid rgba(33, 33, 33, 0.2);
 	border-radius: 4px;
 	width: 100%;
