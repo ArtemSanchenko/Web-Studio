@@ -28,15 +28,11 @@
 	}
 }
 .clients__link .clients__svg {
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
+	@extend %fill ;
 }
 .clients__svg {
 	fill: #afb1b8;
-	transition-property: fill;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
+	@extend %fill ;
 	.clients__link:hover &,
 	.clients__link:focus & {
 		fill: $accent-color;

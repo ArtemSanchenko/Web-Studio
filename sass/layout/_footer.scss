@@ -75,13 +75,13 @@
 	transition-duration: 250ms;
 	transition-property: background-color;
 	background-color: #ffffff10;
-}
-.footer-social__svg {
-	fill: $link-color;
 	&:focus,
 	&:hover {
 		background-color: $accent-color;
 	}
+}
+.footer-social__svg {
+	fill: $link-color;
 }
 .footer-join__title {
 	font-family: Roboto;
@@ -101,14 +101,10 @@
 	background-color: rgba(33, 150, 243, 0);
 	padding-left: 20px;
 	margin-right: 12px;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: color, border-color;
+	@extend %bg-col_col;
 	&:hover,
 	&:focus {
-		cursor: pointer;
-		border-color: $accent-color;
-		color: $link-color;
+		@extend %bg-col_col_hov;
 	}
 }
 .button__svg {

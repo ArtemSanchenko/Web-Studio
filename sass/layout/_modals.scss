@@ -40,9 +40,7 @@
 	border-radius: 50%;
 	right: 12px;
 	top: 10px;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
+	@extend %fill ;
 	&:hover,
 	&:focus {
 		fill: $accent-color;

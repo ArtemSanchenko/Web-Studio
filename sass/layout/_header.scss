@@ -62,9 +62,7 @@
 .info__svg {
 	fill: $add-color;
 	margin-right: 10px;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
+	@extend %fill ;
 	.info__link:hover &,
 	.info__link:focus & {
 		fill: $accent-color;
