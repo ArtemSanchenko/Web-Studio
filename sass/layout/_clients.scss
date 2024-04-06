@@ -7,10 +7,8 @@
 	text-align: center;
 }
 .clients__list {
-	display: flex;
-	gap: 30px;
+	@include flex (30px);
 	margin-top: 50px;
-	justify-content: center;
 }
 .clients__link {
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

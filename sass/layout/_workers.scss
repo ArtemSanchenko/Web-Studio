@@ -10,16 +10,14 @@
 	line-height: normal;
 	letter-spacing: 1.08px;
 	margin-bottom: 50px;
-	}
+}
 .worker__list {
-	display: flex;
-	justify-content: center;
-	gap: 30px;
+	@include flex (30px);
 	flex-direction: column;
-	@media screen and (min-width:768px) {
+	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;
 		flex-direction: row;
-		}
+	}
 }
 .worker__item {
 	box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
@@ -28,11 +26,11 @@
 	border-radius: 0px 0px 4px 4px;
 	width: 100%;
 	padding: 0 20px;
-@media screen and (min-width:768px) {
-flex-basis: calc((100% - 30px)/2);
-}
-@media screen and (min-width:1200px) {
-	flex-basis: calc((100% - 90px)/4);
+	@media screen and (min-width: 768px) {
+		flex-basis: calc((100% - 30px) / 2);
+	}
+	@media screen and (min-width: 1200px) {
+		flex-basis: calc((100% - 90px) / 4);
 	}
 }
 .container__worker {
@@ -56,10 +54,8 @@ flex-basis: calc((100% - 30px)/2);
 	letter-spacing: 0.48px;
 }
 .worker-social {
-	display: flex;
-	gap: 10px;
+	@include flex (10px);
 	margin-top: 28px;
-	justify-content: center;
 }
 .worker-social__link {
 	padding: 12px;
@@ -67,7 +63,7 @@ flex-basis: calc((100% - 30px)/2);
 	border-radius: 50%;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-	transition-property: backgroud-color;
+	transition-property: backgrond-color;
 	&:hover,
 	&:focus {
 		background-color: $accent-color;
@@ -75,7 +71,7 @@ flex-basis: calc((100% - 30px)/2);
 }
 .worker-social__svg {
 	fill: $add-color;
-	@extend %fill ;
+	@extend %fill;
 	.worker-social__link:hover &,
 	.worker-social__link:focus & {
 		fill: $link-color;

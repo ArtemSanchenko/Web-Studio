@@ -92,9 +92,7 @@
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
-	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-	transition-duration: 250ms;
-	transition-property: fill;
+	@extend %fill ;
 	.modal__input:hover + &,
 	.modal__input:focus + & {
 		fill: $accent-color;
@@ -118,15 +116,14 @@
 	outline: none;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-	transition-property: border-color;
+	transition-property: border-color , color;
 	&:hover,
 	&:focus {
 		border-color: $accent-color;
 	}
 }
 .modal__label-rules {
-	display: flex;
-	justify-content: center;
+	@include flex (8.28px);
 	font-family: Roboto;
 	font-weight: 400;
 	font-size: 14px;
@@ -134,7 +131,6 @@
 	letter-spacing: 0.03em;
 	color: #757575;
 	margin-top: 20px;
-	gap: 8.28px;
 	align-items: center;
 }
 .modal__input-rules {
