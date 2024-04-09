@@ -40,7 +40,7 @@
 	border-radius: 50%;
 	right: 12px;
 	top: 10px;
-	@extend %fill ;
+	@extend %fill;
 	&:hover,
 	&:focus {
 		fill: $accent-color;
@@ -92,7 +92,7 @@
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
-	@extend %fill ;
+	@extend %fill;
 	.modal__input:hover + &,
 	.modal__input:focus + & {
 		fill: $accent-color;
@@ -116,14 +116,14 @@
 	outline: none;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	transition-duration: 250ms;
-	transition-property: border-color , color;
+	transition-property: border-color, color;
 	&:hover,
 	&:focus {
 		border-color: $accent-color;
 	}
 }
 .modal__label-rules {
-	@include flex (8.28px);
+	@include flex(8.28px);
 	font-family: Roboto;
 	font-weight: 400;
 	font-size: 14px;
@@ -140,6 +140,24 @@
 	width: 16px;
 	height: 16px;
 	fill: #212121;
+}
+.modal-rules__checkbox {
+	width: 16px;
+	height: 15px;
+	border-color: 2px solid $main-color;
+	border-width: 3px;
+	&:hover {
+		border-color: $accent-color;
+		}
+}
+.modal__input-rules:focus + .modal-rules__checkbox {
+	border-color: $accent-color;
+}
+.modal__input-rules:checked + .modal-rules__checkbox {
+background-color: $accent-color;
+background-image: url(../images/icon_check.svg);
+background-repeat: no-repeat;
+background-position: center;
 }
 .modal__link-rules {
 	text-decoration: underline;
