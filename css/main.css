@@ -1,4 +1,4 @@
-.clients__svg, .clients__link .clients__svg, .worker-social__svg, .info__svg, .modal__svg, .btn-close {
+.clients__svg, .worker-social__svg, .info__svg, .modal__svg, .btn-close {
   -webkit-transition-property: fill;
   transition-property: fill;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -193,8 +193,8 @@
 .modal-rules__checkbox {
   width: 16px;
   height: 15px;
-  border-color: 2px solid #212121;
-  border-width: 3px;
+  border: 2px solid #212121;
+  border-radius: 3px;
 }
 .modal-rules__checkbox:hover {
   border-color: #2196f3;
@@ -304,6 +304,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 50px;
 }
 
@@ -405,12 +408,15 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 
 .advantages__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  -ms-flex-preferred-size: calc((100% - 90px * (4 - 1)) / 4);
+      flex-basis: calc((100% - 90px * (4 - 1)) / 4);
 }
 .advantages__item::before {
   content: "";

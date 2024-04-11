@@ -7,7 +7,7 @@
 	text-align: center;
 }
 .clients__list {
-	@include flex (30px);
+	@include flex(30px);
 	margin-top: 50px;
 }
 .clients__link {
@@ -25,12 +25,9 @@
 		border-color: $accent-color;
 	}
 }
-.clients__link .clients__svg {
-	@extend %fill ;
-}
 .clients__svg {
 	fill: #afb1b8;
-	@extend %fill ;
+	@extend %transition-fill ;
 	.clients__link:hover &,
 	.clients__link:focus & {
 		fill: $accent-color;

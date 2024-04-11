@@ -12,7 +12,7 @@
 	margin-bottom: 50px;
 }
 .worker__list {
-	@include flex (30px);
+	@include flex(30px);
 	flex-direction: column;
 	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;
@@ -54,7 +54,7 @@
 	letter-spacing: 0.48px;
 }
 .worker-social {
-	@include flex (10px);
+	@include flex(10px);
 	margin-top: 28px;
 }
 .worker-social__link {
@@ -71,7 +71,7 @@
 }
 .worker-social__svg {
 	fill: $add-color;
-	@extend %fill;
+	@extend %transition-fill;
 	.worker-social__link:hover &,
 	.worker-social__link:focus & {
 		fill: $link-color;

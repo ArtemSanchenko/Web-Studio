@@ -40,7 +40,7 @@
 	border-radius: 50%;
 	right: 12px;
 	top: 10px;
-	@extend %fill;
+	@extend %transition-fill;
 	&:hover,
 	&:focus {
 		fill: $accent-color;
@@ -92,7 +92,7 @@
 	position: absolute;
 	bottom: 11px;
 	left: 12px;
-	@extend %fill;
+	@extend %transition-fill;
 	.modal__input:hover + &,
 	.modal__input:focus + & {
 		fill: $accent-color;
@@ -144,8 +144,8 @@
 .modal-rules__checkbox {
 	width: 16px;
 	height: 15px;
-	border-color: 2px solid $main-color;
-	border-width: 3px;
+	border: 2px solid $main-color;
+	border-radius: 3px;
 	&:hover {
 		border-color: $accent-color;
 		}

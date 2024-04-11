@@ -3,7 +3,7 @@
 	padding-bottom: 94px;
 }
 .filters {
-	@include flex (8px);
+	@include flex(8px);
 	margin-bottom: 50px;
 }
 
@@ -33,7 +33,7 @@
 	}
 }
 .projects-list {
-	@include flex (30px);
+	@include flex(30px);
 	flex-flow: row wrap;
 }
 .projects-list__item {

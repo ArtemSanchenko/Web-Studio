@@ -3,11 +3,10 @@
 	padding-bottom: 94px;
 }
 .advantages__list {
-	display: flex;
-	gap: 30px;
+	@include flex(30px);
 }
 .advantages__item {
-	flex-basis: calc((100% - 90px) / 4);
+	@include flex-basis(90px,4);
 	&::before {
 		content: "";
 		display: block;

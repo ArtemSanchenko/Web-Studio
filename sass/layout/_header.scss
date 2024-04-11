@@ -3,14 +3,13 @@
 	align-items: baseline;
 }
 .nav__list {
-	display: flex;
-	gap: 50px;
+	@include flex(50px);
 }
 .nav__link {
 	display: block;
 	padding-top:24px ;
 	padding-bottom: 25px;
-	@extend %color;
+	@extend %transition-color;
 	color: $main-color;
 	font-size: 14px;
 	letter-spacing: 0.28px;
@@ -49,7 +48,7 @@
 	font-weight: 500;
 	line-height: normal;
 	letter-spacing: 0.28px;
-	@extend %color;
+	@extend %transition-color;
 	&:hover,
 	&:focus {
 		color: $accent-color;
@@ -58,7 +57,7 @@
 .info__svg {
 	fill: $add-color;
 	margin-right: 10px;
-	@extend %fill ;
+	@extend %transition-fill ;
 	.info__link:hover &,
 	.info__link:focus & {
 		fill: $accent-color;
