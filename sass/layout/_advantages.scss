@@ -1,9 +1,16 @@
 .advantages {
+	display: flex;
 	padding-top: 94px;
 	padding-bottom: 94px;
+	
 }
 .advantages__list {
 	@include flex(30px);
+	@media screen and (min-width: 480px) {
+		@include flex-basis(30px,2);
+		flex-wrap: wrap;
+		width: 100vw;
+	}
 }
 .advantages__item {
 	@include flex-basis(90px,4);

@@ -1,6 +1,12 @@
 
 .work {
 	padding-bottom: 94px;
+	@media screen and (max-width: 480px) {
+		display: none;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+				}
 }
 .work__title {
 	color: $main-color;
