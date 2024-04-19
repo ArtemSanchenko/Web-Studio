@@ -6,14 +6,25 @@
 }
 .advantages__list {
 	@include flex(30px);
-	@media screen and (min-width: 480px) {
-		@include flex-basis(30px,2);
+	flex-direction: column;
+	@media screen and (min-width: 768px) {
 		flex-wrap: wrap;
-		width: 100vw;
+		flex-direction: row;
+	}
+	@media screen and (max-width: 1600px) {
+		flex-wrap: nowrap;
+		flex-direction: row;
 	}
 }
 .advantages__item {
-	@include flex-basis(90px,4);
+	@include flex-basis(90px,2);
+			min-width: 100%;
+			@media screen and (min-width: 768px) {
+				@include flex-basis(60px,2);
+				}
+				@media screen and (min-width: 1600px) {
+					@include flex-basis(90px,4);
+					}
 	&::before {
 		content: "";
 		display: block;
@@ -27,15 +38,23 @@
 		width: 270px;
 		height: 120px;
 		border-radius: 4px;
+			min-width: 100%;
+			@media screen and (min-width: 1600px) {
+				max-width: 100%;
+				}
+	
 	}
 	&:nth-child(3)::before {
 		background-image: url(../images/computer_img.svg);
+	
 	}
 	&:nth-child(2)::before {
 		background-image: url(../images/clock_img.svg);
+		
 	}
 	&:nth-child(4)::before {
 		background-image: url(../images/austronaut_img.svg);
+		
 	}
 }
 .advantages__title {
@@ -46,6 +65,7 @@
 	letter-spacing: 0.42px;
 	text-transform: uppercase;
 	margin-bottom: 10px;
+	text-align: center;
 }
 .advantages__text {
 	color: $add-color;

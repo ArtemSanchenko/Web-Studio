@@ -7,9 +7,6 @@
 	@media screen and (max-width: 480px) {
 		visibility: hidden;
 			}
-			@media screen and (max-width: 768px) {
-				visibility: visible;
-					}
 }
 .nav__link {
 	display: block;
@@ -43,13 +40,15 @@
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
-	@media screen and (min-width: 768px) {
-		width: 138px;
-		height: 36px;
-	flex-wrap: wrap;
+	@media screen and (min-width: 480px) {
+	visibility: hidden;
 		}
-		@media screen and (min-width: 480px) {
-			visibility: hidden;
+		@media screen and (min-width: 768px) {
+			visibility: visible;
+			}
+
+			@media screen and (min-width: 1600px) {
+			visibility: visible;
 				}
 	
 }
