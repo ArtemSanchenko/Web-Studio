@@ -1,6 +1,7 @@
 .header > .container {
 	display: flex;
-	align-items: baseline;
+	align-items: center;
+	justify-content: space-between;
 }
 .nav {
 	display:none;
@@ -27,6 +28,14 @@
 	&:focus {
 		color: $accent-color;
 	}
+	@media screen and (min-width:768px) {
+		padding-top: 32px;
+		padding-bottom: 32px;
+		}
+		@media screen and (min-width:1200px) {
+			padding-top: 24px;
+			padding-bottom: 25px;
+			}
 }
 .nav__link--current {
 	color: $accent-color;
@@ -43,15 +52,19 @@
 	}
 }
 .info{
-	display: flex;
 	gap: 50px;
 	margin-left: auto;
 		display:none;
 		@media screen and (min-width: 768px) {
-			display: block;
+			display: flex;
+			margin-left: auto;
+			flex-direction: column;
+			gap: 10px;
 			}
-			@media screen and (min-width: 1600px) {
-				display: block;
+			@media screen and (min-width: 1200px) {
+				display: flex;
+				gap: 50px;
+				flex-direction: row;
 				}
 	
 }
@@ -81,6 +94,19 @@
 	}
 }
 .menu-open__button {
+	position: absolute;
+	display: flex;
+	background-color: transparent;
+	border: none;
+	padding: 24px 0 16px 0;
+	right: 12px;
+	top: 10px;
+	@extend %transition-fill;
+	&:hover,
+	&:focus {
+		fill: $accent-color;
+		cursor: pointer;
+	}
 	@media screen and (min-width: 768px) {
 		display: none;
 		}

@@ -1,8 +1,10 @@
 .advantages {
-	display: flex;
-	padding-top: 94px;
-	padding-bottom: 94px;
-	
+	padding-top: 60px;
+	padding-bottom: 60px;
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+		padding-bottom: 94px;
+		}
 }
 .advantages__list {
 	@include flex(30px);
@@ -11,7 +13,7 @@
 		flex-wrap: wrap;
 		flex-direction: row;
 	}
-	@media screen and (max-width: 1600px) {
+	@media screen and (min-width: 1200px) {
 		flex-wrap: nowrap;
 		flex-direction: row;
 	}
@@ -21,7 +23,7 @@
 			@media screen and (min-width: 768px) {
 				@include flex-basis(60px,2);
 				}
-				@media screen and (min-width: 1600px) {
+				@media screen and (min-width: 1200px) {
 					flex-basis:calc((100% - 90px*(4 - 1))/4);
 					}
 	&::before {
@@ -65,6 +67,9 @@
 	text-transform: uppercase;
 	margin-bottom: 10px;
 	text-align: center;
+	@media screen and (min-width: 768px) {
+	text-align: left;
+		}
 }
 .advantages__text {
 	color: $add-color;

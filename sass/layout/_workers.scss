@@ -1,7 +1,15 @@
 .workers {
-	padding-top: 94px;
-	padding-bottom: 94px;
+	padding-top: 60px;
+	padding-bottom: 60px;
 	background-color: #f5f4fa;
+	@media screen and (min-width: 768px) {
+		padding-top: 60px;
+	padding-bottom: 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		padding-top: 94px;
+	padding-bottom: 94px;
+	}
 }
 .workers__title {
 	color: $main-color;
@@ -24,8 +32,7 @@
 		0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 	background-color: $link-color;
 	border-radius: 0px 0px 4px 4px;
-	width: 100%;
-	padding: 0 20px;
+	flex-basis: 100%;
 	@media screen and (min-width: 768px) {
 		@include flex-basis(30px,2);
 	}

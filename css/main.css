@@ -233,9 +233,9 @@
     min-width: 768px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .container {
-    width: 1600px;
+    width: 1200px;
   }
 }
 
@@ -295,9 +295,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .nav {
@@ -336,6 +339,18 @@ img {
 .nav__link:hover, .nav__link:focus {
   color: #2196f3;
 }
+@media screen and (min-width: 768px) {
+  .nav__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav__link {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
+}
 
 .nav__link--current {
   color: #2196f3;
@@ -353,21 +368,33 @@ img {
 }
 
 .info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   gap: 50px;
   margin-left: auto;
   display: none;
 }
 @media screen and (min-width: 768px) {
   .info {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .info {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 50px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -417,6 +444,12 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
   font-family: Roboto;
@@ -430,7 +463,7 @@ img {
   text-align: center;
   color: #fff;
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-family: var(--font-family);
     font-weight: 900;
@@ -444,11 +477,14 @@ img {
 }
 
 .advantages {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .advantages {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages__list {
@@ -474,7 +510,7 @@ img {
             flex-direction: row;
   }
 }
-@media screen and (max-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantages__list {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
@@ -495,7 +531,7 @@ img {
         flex-basis: calc((100% - 60px * (2 - 1)) / 2);
   }
 }
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1200px) {
   .advantages__item {
     -ms-flex-preferred-size: calc((100% - 270px) / 4);
         flex-basis: calc((100% - 270px) / 4);
@@ -541,6 +577,11 @@ img {
   margin-bottom: 10px;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  .advantages__title {
+    text-align: left;
+  }
+}
 
 .advantages__text {
   color: #757575;
@@ -557,6 +598,13 @@ img {
 @media screen and (max-width: 768px) {
   .work {
     display: none;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .work {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -610,9 +658,21 @@ img {
 }
 
 .workers {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
+}
+@media screen and (min-width: 768px) {
+  .workers {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .workers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .workers__title {
@@ -653,8 +713,8 @@ img {
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
   background-color: #fff;
   border-radius: 0px 0px 4px 4px;
-  width: 100%;
-  padding: 0 20px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
 }
 @media screen and (min-width: 768px) {
   .worker__item {
