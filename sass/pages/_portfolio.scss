@@ -5,6 +5,13 @@
 .filters {
 	@include flex(8px);
 	margin-bottom: 50px;
+	flex-wrap: wrap;
+	width: 75%;
+	@media screen and (min-width: 1600px) {
+		width: 100%;
+		align-items: baseline;
+		flex-wrap: nowrap;
+		}
 }
 
 .filters__button {

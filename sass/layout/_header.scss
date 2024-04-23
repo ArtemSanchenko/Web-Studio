@@ -2,6 +2,12 @@
 	display: flex;
 	align-items: baseline;
 }
+.nav {
+	display:none;
+	@media screen and (min-width: 768px) {
+		display: block;
+		}
+}
 .nav__list {
 	@include flex(50px);
 	@media screen and (max-width: 480px) {
@@ -40,15 +46,12 @@
 	display: flex;
 	gap: 50px;
 	margin-left: auto;
-	@media screen and (min-width: 480px) {
-	visibility: hidden;
-		}
+		display:none;
 		@media screen and (min-width: 768px) {
-			visibility: visible;
+			display: block;
 			}
-
 			@media screen and (min-width: 1600px) {
-			visibility: visible;
+				display: block;
 				}
 	
 }
@@ -76,4 +79,9 @@
 	.info__link:focus & {
 		fill: $accent-color;
 	}
+}
+.menu-open__button {
+	@media screen and (min-width: 768px) {
+		display: none;
+		}
 }
