@@ -94,15 +94,9 @@
 	}
 }
 .menu-open__button {
-	position: absolute;
-	display: flex;
 	background-color: transparent;
-	border: none;
-	padding: 24px 0 16px 0;
-	right: 12px;
-	top: 10px;
-	@extend %transition-fill;
-	&:hover,
+    border: none;
+	&:hover .menu-open__svg,
 	&:focus {
 		fill: $accent-color;
 		cursor: pointer;

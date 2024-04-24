@@ -21,10 +21,10 @@
 .advantages__item {
 	flex-basis:100%;
 			@media screen and (min-width: 768px) {
-				@include flex-basis(60px,2);
+				@include flex-basis(30px,2);
 				}
 				@media screen and (min-width: 1200px) {
-					flex-basis:calc((100% - 90px*(4 - 1))/4);
+					@include flex-basis(30px,4);
 					}
 	&::before {
 		content: "";
