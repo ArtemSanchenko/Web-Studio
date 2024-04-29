@@ -3,11 +3,13 @@
 	padding-bottom: 94px;
 }
 .filters {
+	display: flex;
 	@include flex(8px);
 	margin-bottom: 50px;
 	flex-wrap: wrap;
 	width: 75%;
-	@media screen and (min-width: 1600px) {
+	text-align: left;
+	@media screen and (min-width: 768px) {
 		width: 100%;
 		align-items: baseline;
 		flex-wrap: nowrap;
@@ -47,6 +49,12 @@
 	border-width: 1px;
 	border-color: #eee;
 	border-style: solid;
+	@media screen and (min-width: 768px) {
+		@include flex-basis(30px,2);
+	}
+	@media screen and (min-width: 1200px) {
+		@include flex-basis(30px,3);
+	}
 }
 
 .projects-list__link {
