@@ -9,9 +9,12 @@ display: block; }
 	color: $main-color;
 	text-align: center;
 	font-family: Roboto;
-	font-size: 36px;
+	font-size: 26px;
 	line-height: normal;
 	letter-spacing: 1.08px;
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+	}
 }
 .work__list {
 	@include flex(30px);

@@ -19,6 +19,10 @@ color: #212121;
 .clients__list {
 	@include flex(30px);
 	margin-top: 50px;
+	flex-wrap: wrap;
+	@media screen and (min-width: 1200px) {
+		flex-wrap: nowrap;
+			}
 }
 .clients__item {
 	@include flex-basis(30px,2);
