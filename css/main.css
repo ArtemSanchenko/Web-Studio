@@ -1250,12 +1250,20 @@ img {
 }
 @media screen and (min-width: 768px) {
   .filters {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 100%;
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: row;
+        -ms-flex-align: row;
+            align-items: row;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
+  }
+}
+@media screen and (max-width: 767px) {
+  .filters {
+    max-width: 350px;
   }
 }
 
@@ -1299,11 +1307,6 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-}
-@media screen and (min-width: 767px) {
-  .projects-list {
-    min-width: 350px;
-  }
 }
 
 .projects-list__item {

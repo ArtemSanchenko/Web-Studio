@@ -15,10 +15,14 @@
 	text-align: left;
 	justify-content: flex-start;
 	@media screen and (min-width: 768px) {
+		justify-content: center;
 		width: 100%;
-		align-items: baseline;
+		align-items: row;
 		flex-wrap: nowrap;
 		}
+		@media screen and (max-width:767px) {
+			max-width:350px;
+			}
 }
 
 .filters__button {
@@ -49,9 +53,6 @@
 .projects-list {
 	@include flex(30px);
 	flex-flow: row wrap;
-	@media screen and (min-width:767px) {
-		min-width:350px;
-		}
 }
 .projects-list__item {
 	border-width: 1px;
