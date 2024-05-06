@@ -105,3 +105,48 @@
 		display: none;
 		}
 }
+.menu {
+    transition:transform 250ms;
+    transform: translateX(-100%);
+    &.is-open {
+        display: block;
+        position: absolute;
+        top: 60px;
+        background-color: $bg-color;
+        width: 100vw;
+        padding: 52px 0;
+        transform: translateX(0);
+    }
+   
+    @media screen and (min-width: 1200px) {
+    display: block;
+    }
+    }
+    .menu__list {
+    display: flex;
+    gap: 73px;
+    .menu.is-open &{
+        flex-direction: column;
+        gap: 24px;
+    }
+   
+    }
+	.menu__btn {
+		background-color: transparent;
+		border: none;
+		.nav.is-open + & {
+			display: none;
+		}
+		@media screen and (min-width: 1200px) {
+		display: none;
+		}
+		}
+		.menu__btn-close {
+			display: none;
+			background-color: transparent;
+			border: none;
+			.nav.is-open ~ & {
+				display: block;
+			}
+		}
+	
