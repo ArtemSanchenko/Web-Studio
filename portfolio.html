@@ -25,15 +25,18 @@
 		<header class="header">
 			<div class="container">
 				<a class="header__logo logo link" href="./index.html">
-					<span class="logo__accent">Web</span>Studio
+					<span class="logo__accent">Web</span>
+					Studio
 				</a>
 				<nav class="nav">
 					<ul class="nav__list list">
 						<li class="nav__item">
-							<a class="link nav__link" href="./index.html">Студія</a>
+							<a class="link nav__link nav__link--current animate__animated animate__wobble" href="./index.html">
+								Студія
+							</a>
 						</li>
 						<li class="nav__item">
-							<a class="link nav__link nav__link--current animate__animated animate__wobble" href="./portfolio.html">Портфоліо</a>
+							<a class="link nav__link" href="./portfolio.html">Портфоліо</a>
 						</li>
 						<li class="nav__item">
 							<a class="link nav__link" href="./index.html">Контакти</a>
@@ -58,9 +61,53 @@
 						</a>
 					</li>
 				</ul>
-				<button type="button" class="menu-open__button">
-					<svg width="40" height="40"  class="menu-open__svg"><use href="./images/symboldefts.svg#icon-menu"></use></svg>
+				<button type="button" class="js-open-menu menu-toggle" area-expanded="false" aria-controls="mobile-menu">
+					<svg width="40" height="40" class="menu-open__svg"><use href="./images/symboldefts.svg#icon-menu"></use></svg>
 				</button>
+				<div class="menu-container js-menu-container" id="mobile menu" data-menu>
+					<button type="button" class="menu-toggle js-close-menu" area-expanded="false" aria-controls="mobile-menu">
+						<svg width="40" height="40" class="menu-close__svg">
+							<use href="./images/symboldefts.svg#icon-close"></use>
+						</svg>
+					</button>
+					<ul class="menu list">
+						<li class="menu__item">
+							<a class="menu__link link" href="./index.html">Студія</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link" href="./portfolio.html">Портфоліо</a>
+						</li>
+						<li class="menu__item">
+							<a class="menu__link link" href="./index.html">Контакти</a>
+						</li>
+					</ul>
+					<div class="menu-container__bottom">
+					<ul class="contact-menu list">
+						<li class="contact-menu__item">
+							<a class="contact-menu__link link" type="tel" href="+38 096 111 11 11">+38 096 111 11 11</a>
+						</li>
+
+						<li class="contact-menu__item">
+							<a class="contact-menu__link link" type="email" href="info@devstudio.com">info@devstudio.com</a>
+						</li>
+					</ul>
+
+					<ul class="website-menu list">
+						<li class="website-menu__item">
+							<a class="website-menu__link link" type="tel" href="https://www.instagram.com/">Instagran</a>
+						</li>
+						<li class="website-menu__item">
+							<a class="website-menu__link link" type="email" href="https://twitter.com/?lang=uk">Twitter</a>
+						</li>
+						<li class="website-menu__item">
+							<a class="website-menu__link link" type="tel" href="www.facebook.com">Facebook</a>
+						</li>
+						<li class="website-menu__item">
+							<a class="website-menu__link link" type="email" href="https://www.linkedin.com/">LinkedIn</a>
+						</li>
+					</ul>
+				</div>
+				</div>
 			</div>
 		</header>
 		<main>
@@ -311,5 +358,6 @@
 			</div>
 		</footer>
 		<script src="./js/modal.js"></script>
+		<script src="./js/mobile-menu.js"></script>
 	</body>
 </html>
